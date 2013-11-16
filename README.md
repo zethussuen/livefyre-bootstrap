@@ -19,7 +19,7 @@ Run the dev server with
 
 Visit /demos/main to see it in action
 
-![In action](http://d.pr/i/nJkn+)
+![In action](http://d.pr/i/fFnP+)
 
 ## Usage
 
