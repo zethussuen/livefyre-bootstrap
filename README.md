@@ -2,6 +2,11 @@
 
 Bootstrap CSS framework, skinned to be ON FYRE.
 
+## Features
+
+* All Bootstrap rules only apply to descendants of elements with class 'lf'.
+* `.lf-navbar` - `navbar` skinned to match Bard
+
 ## Building
 
 Install node, then
@@ -22,6 +27,12 @@ Build the CSS, then include add the stylesheet to your page
 
 ```html
 <link rel="stylesheet" href="./dist/lf.css"></link>
+```
+
+Add the 'lf' class to your Element.
+
+```html
+<html class="lf">...</html>
 ```
 
 You can include Bootstrap JS (to power dropdowns and such), with:
