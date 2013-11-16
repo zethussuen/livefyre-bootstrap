@@ -1,0 +1,26 @@
+{
+  "name": "livefyre-bootstrap",
+  "description": "Bootstrap Livefyre webapps",
+  "author": "Livefyre <support@livefyre.com>",
+  "contributors": {
+    "name": "Benjamin Goering",
+    "email": "ben@livefyre.com"
+  },
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "./node_modules/http-server/bin/http-server .",
+    "test": "./bin/test",
+    "hint": "./node_modules/jshint/bin/jshint src/**/*.js; echo",
+    "jsdoc": "rm -rf docs/api && ./node_modules/jsdoc/jsdoc -c tools/jsdoc.conf.json",
+    "build": "mkdir -p dist && ./node_modules/less/bin/lessc src/styles/all.less > dist/lf.css"
+  },
+  "devDependencies": {
+    "bower": "1.0.0",
+    "http-server": "*",
+    "jshint": "~1.1.0",
+    "jsdoc": "git://github.com/jsdoc3/jsdoc.git",
+    "mocha-phantomjs": "~3",
+    "less": "~1.5.0"
+  }
+}

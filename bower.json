@@ -1,0 +1,14 @@
+{
+  "name": "livefyre-bootstrap",
+  "version": "0.0.0",
+  "main": [
+    "./src/main.js"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.2"
+  },
+  "devDependencies": {
+    "cajon": "git@github.com:requirejs/cajon.git#~0.1.11",
+    "chai": "~1.8.1"
+  }
+}
