@@ -11,10 +11,10 @@
           relativeUrls: true,// whether to adjust url's to be relative
                               // if false, url's are already relative to the
                               // entry less file
+          logLevel: 1
       };
   </script>
   <script src="../../lib/less.js/dist/less-1.5.1.js"></script>
-
 </head>
 <body>
 
@@ -63,6 +63,116 @@
     <p>
     <a class="btn btn-lg btn-primary" href="./" role="button">Click Me</a>
     </p>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>.nav</h1>
+      <p>.nav is provided by Bootstrap and comes in two themes</p>
+      <section>
+        <h2>.nav-tabs</h2>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>.nav-pills</h2>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li class="dropdown">
+            <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>.lf-bar</h1>
+      <p>
+      .lf-bar is provided by livefyre-bootstrap.
+      It can hold a .lf-nav, which extends Bootstrap's .nav and when in a .lf-bar matches the LF style guide.</p>
+      <p>lf-bar has two themes, .lf-bar-default (light) and
+      .lf-bar-inverted (dark)</p>
+      <section>
+        <h2>.lf-bar .lf-nav</h2>
+        <div class="lf-bar">
+          <ul class="lf-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li class="dropdown">
+              <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                <li><a>Action</a></li>
+                <li><a>Another action</a></li>
+                <li><a>Something else here</a></li>
+                <li class="divider"></li>
+                <li><a>Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>.lf-bar .lf-bar-default .lf-nav</h2>
+        <div class="lf-bar lf-bar-default">
+          <ul class="lf-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li class="dropdown">
+              <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                <li><a>Action</a></li>
+                <li><a>Another action</a></li>
+                <li><a>Something else here</a></li>
+                <li class="divider"></li>
+                <li><a>Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>.lf-bar .lf-bar-inverted .lf-nav</h2>
+        <div class="lf-bar lf-bar-inverted">
+          <ul class="lf-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li class="dropdown">
+              <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                <li><a>Action</a></li>
+                <li><a>Another action</a></li>
+                <li><a>Something else here</a></li>
+                <li class="divider"></li>
+                <li><a>Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>Coming Soon...</h1>
+    </div>
   </div>
 
 </div> <!-- /container -->
