@@ -3,10 +3,6 @@
  */
 @import "../../lib/bootstrap/less/variables.less";
 
-// Components
-// -------------------------
-
-@border-radius-xsmall:		2px;
 
 // LF colors
 // -------------------------
@@ -47,6 +43,11 @@
 @brand-danger:    @lf-red;
 @brand-info:      @lf-blue;
 
+
+// Components
+// -------------------------
+@component-active-bg:       @lf-blue;
+@border-radius-xsmall:		2px;
 
 /**
  * Links
@@ -157,3 +158,23 @@
 @popover-dark-arrow-color:                 @popover-dark-bg;
 @popover-dark-arrow-outer-color:           @popover-dark-bg;
 @popover-dark-arrow-outer-fallback-color:  @popover-dark-bg;
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:                    #fff;
+@dropdown-border:                transparent;
+@dropdown-fallback-border:       #ccc;
+@dropdown-divider-bg:            #e5e5e5;
+
+@dropdown-link-color:            @gray-dark;
+@dropdown-link-hover-color:      #FFFFFF;
+@dropdown-link-hover-bg:         @lf-blue;
+
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+
+@dropdown-link-disabled-color:   @gray-light;
+
+@dropdown-header-color:          @gray-light;
+
+@dropdown-caret-color:           #000;
