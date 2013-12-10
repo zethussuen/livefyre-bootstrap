@@ -3,7 +3,31 @@
  */
 @import "../../lib/bootstrap/less/variables.less";
 
-@brand-primary:         #ff5e00;
+// LF colors
+// -------------------------
+@lf-grey:      #2F3440;
+@lf-purple:    #7168A5;
+@lf-blue:      #0F98EC;
+@lf-green:     #63C685;
+@lf-yellow:    #FEB33B;
+@lf-orange:    #E65B3F;
+@lf-red:       #F53E52;
+
+@lf-light-grey:      lighten(@lf-grey, 15%);
+@lf-light-purple:    lighten(@lf-purple, 15%);
+@lf-light-blue:      lighten(@lf-blue, 15%);
+@lf-light-green:     lighten(@lf-green, 15%);
+@lf-light-yellow:    lighten(@lf-yellow, 15%);
+@lf-light-orange:    lighten(@lf-orange, 15%);
+@lf-light-red:       lighten(@lf-red, 15%);
+
+// Brand colors
+// -------------------------
+@brand-primary:   #FF5E00;
+@brand-success:   @lf-green;
+@brand-warning:   @lf-yellow;
+@brand-danger:    @lf-red;
+@brand-info:      @lf-blue;
 
 /**
  * Navbar
@@ -17,10 +41,29 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-bg:                #35353a;
-@navbar-default-link-color:                #aaa;
-@navbar-default-link-hover-color:          white;
+@navbar-default-link-color:        #aaa;
+@navbar-default-link-hover-color:  white;
 
 // Navbar brand label
-@navbar-default-brand-color:               white;
-@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
-@navbar-default-brand-hover-bg:            transparent;
+@navbar-default-brand-color:       white;
+@navbar-default-brand-hover-color: darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:    transparent;
+
+// Form states and alerts
+// -------------------------
+
+@state-success-text:             #FFFFFF;
+@state-success-bg:               @lf-green;
+@state-success-border:           @lf-green;
+
+@state-info-text:                #FFFFFF;
+@state-info-bg:                  @lf-blue;
+@state-info-border:              @lf-blue;
+
+@state-warning-text:             #FFFFFF;
+@state-warning-bg:               @lf-yellow;
+@state-warning-border:           @lf-yellow;
+
+@state-danger-text:              #FFFFFF;
+@state-danger-bg:                @lf-red;
+@state-danger-border:            @lf-red;
