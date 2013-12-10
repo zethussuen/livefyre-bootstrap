@@ -1,7 +1,20 @@
 <!doctype html>
 <html class="lf">
 <head>
-  <link rel="stylesheet" href="../../dist/lf.css" />
+  <link rel="stylesheet/less" href="../../src/styles/all.less" />
+  <script type="text/javascript">
+      less = {
+          env: "development", // or "production"
+          async: true,       // load imports async
+          poll: 1000,         // when in watch mode, time in ms between polls
+          dumpLineNumbers: "comments", // or "mediaQuery" or "all"
+          relativeUrls: true,// whether to adjust url's to be relative
+                              // if false, url's are already relative to the
+                              // entry less file
+      };
+  </script>
+  <script src="../../lib/less.js/dist/less-1.5.1.js"></script>
+
 </head>
 <body>
 
