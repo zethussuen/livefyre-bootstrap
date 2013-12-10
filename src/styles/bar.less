@@ -1,0 +1,82 @@
+/**
+ * A bar of things, usually buttons, but without all the
+ * resizing, brand, collapsing magic of .navbar
+ * http://d.pr/i/EGN1
+ */
+
+.lf-bar {
+    > .lf-nav {
+        .nav;
+        > li {
+            float: left;
+
+            // Active link and hovered links have bottom border
+            &.active > a,
+            &:hover > a {
+                background-color: inherit;
+                border-bottom: 4px solid;
+            }
+        }
+    }
+}
+
+/**
+ * .lf-bar-default
+ * Default theme for .lf-bar
+ */
+
+@lf-bar-default-bg: #f7f8f6;
+@lf-bar-default-nav-link-color: @gray;
+@lf-bar-default-nav-active-link-color: rgb(235, 81, 43);
+@lf-bar-default-nav-active-link-bg: fadeout(@lf-bar-default-nav-active-link-color, 95%);
+
+.lf-bar.lf-bar-default {
+    background-color: @lf-bar-default-bg;
+
+    > .lf-nav {
+        > li {
+            > a {
+                color: @lf-bar-default-nav-link-color;
+            }
+
+            // Active item link and hovered links have highlighted
+            // text and background color
+            &.active > a,
+            > a:hover {
+                color: @lf-bar-default-nav-active-link-color;
+                background-color: @lf-bar-default-nav-active-link-bg;
+            }
+        }
+    }
+}
+
+/**
+ * .lf-bar-inverted
+ * Dark theme for .lf-bar
+ */
+
+@lf-bar-inverted-bg: #30353f;
+@lf-bar-inverted-nav-link-color: @gray-light;
+@lf-bar-inverted-nav-active-link-color: white;
+@lf-bar-inverted-nav-active-link-bg: fadeout(@lf-bar-default-nav-active-link-color, 80%);
+
+.lf-bar.lf-bar-inverted {
+    background-color: @lf-bar-inverted-bg;
+
+    > .lf-nav {
+        > li {
+            > a {
+                color: @lf-bar-inverted-nav-link-color;
+            }
+
+            // Active item link and hovered links have highlighted
+            // text and background color
+            &.active > a,
+            > a:hover {
+                background-color: @lf-bar-inverted-nav-active-link-bg;
+                border-color: @lf-bar-default-nav-active-link-color;
+                color: @lf-bar-inverted-nav-active-link-color;
+            }
+        }
+    }
+}
