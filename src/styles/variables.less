@@ -10,7 +10,6 @@
 
 // LF colors
 // -------------------------
-
 @lf-gray-darker:    #2F3440;
 @lf-gray-dark:      tint(@lf-gray-darker, 30%);
 @lf-gray:           tint(@lf-gray-darker, 60%);
@@ -40,7 +39,6 @@
 
 // Brand colors
 // -------------------------
-
 @brand-primary:   #FF5E00;
 @brand-success:   @lf-green;
 @brand-warning:   @lf-yellow;
@@ -77,6 +75,7 @@
 
 // Form states and alerts
 // -------------------------
+
 @state-success-text:             #FFFFFF;
 @state-success-bg:               @lf-green;
 @state-success-border:           @lf-green;
@@ -129,7 +128,6 @@
 
 // Tooltips
 // -------------------------
-
 @tooltip-max-width: 			200px;
 @tooltip-arrow-width:           5px;
 
@@ -140,4 +138,21 @@
 @tooltip-light-bg:              #ffffff;
 
 @tooltip-arrow-color:           @tooltip-bg;
-@tooltip-arrow-light-color:     @tooltip-light-bg;
+@tooltip-arrow-light-color:     @tooltip-light-bg;@btn-link-disabled-color:        @gray-light;
+
+// Popovers
+// -------------------------
+@popover-bg:                          #fff;
+@popover-dark-bg:                     #232731;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-arrow-width:                 10px;
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-color:                 #fff;
+@popover-arrow-outer-color:           rgba(0,0,0,.25);
+@popover-arrow-outer-fallback-color:  #999;
+
+@popover-dark-arrow-color:                 @popover-dark-bg;
+@popover-dark-arrow-outer-color:           @popover-dark-bg;
+@popover-dark-arrow-outer-fallback-color:  @popover-dark-bg;
