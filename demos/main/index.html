@@ -76,7 +76,7 @@
     <h1>Livefyre Bootstrap</h1>
     <p>"Consistency is one of the most powerful usability principles: when things always behave the same, users don't have to worry about what will happen. Instead, they know what will happen based on earlier experience." -Jakob Nielsen</p>
     <p>
-    <a class="btn btn-lg btn-primary" href="./" role="button">Click Me</a>
+    <a class="lf-btn lf-btn-lg btn-primary" href="./" role="button">Click Me</a>
     </p>
   </div>
 
@@ -179,6 +179,177 @@
               </ul>
             </li>
           </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>.lf-btn</h1>
+      <!-- Standard button -->
+      <button type="button" class="lf-btn lf-btn-default">Default</button>
+
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="lf-btn lf-btn-primary">Primary</button>
+
+      <!-- Indicates a successful or positive action -->
+      <button type="button" class="lf-btn lf-btn-success">Success</button>
+
+      <!-- Contextual button for informational alert messages -->
+      <button type="button" class="lf-btn lf-btn-info">Info</button>
+
+      <!-- Indicates caution should be taken with this action -->
+      <button type="button" class="lf-btn lf-btn-warning">Warning</button>
+
+      <!-- Indicates a dangerous or potentially negative action -->
+      <button type="button" class="lf-btn lf-btn-danger">Danger</button>
+
+      <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+      <button type="button" class="lf-btn lf-btn-link">Link</button> 
+
+      <section>
+        <h2>.lf-btn-lg, .lf-btn-sm, .lf-btn-xs</h2>
+        <p>
+          <button type="button" class="lf-btn lf-btn-primary lf-btn-lg">Large button</button>
+          <button type="button" class="lf-btn lf-btn-default lf-btn-lg">Large button</button>
+        </p>
+        <p>
+          <button type="button" class="lf-btn lf-btn-primary">Default button</button>
+          <button type="button" class="lf-btn lf-btn-default">Default button</button>
+        </p>
+        <p>
+          <button type="button" class="lf-btn lf-btn-primary lf-btn-sm">Small button</button>
+          <button type="button" class="lf-btn lf-btn-default lf-btn-sm">Small button</button>
+        </p>
+        <p>
+          <button type="button" class="lf-btn lf-btn-primary lf-btn-xs">Extra small button</button>
+          <button type="button" class="lf-btn lf-btn-default lf-btn-xs">Extra small button</button>
+        </p>
+      </section>
+
+      <section>
+        <h2>.lf-btn-block</h2>
+        <button type="button" class="btn btn-primary btn-lg lf-btn-block">Block level button</button>
+        <button type="button" class="btn btn-default btn-lg lf-btn-block">Block level button</button>
+      </section>
+
+      <section>
+        <h2>.lf-btn[disabled=disabled]</h2>
+        <button type="button" class="lf-btn lf-btn-lg lf-btn-primary" disabled="disabled">Primary button</button>
+        <button type="button" class="lf-btn lf-btn-default lf-btn-lg" disabled="disabled">Button</button>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1>.lf-btn-group</h1>
+      <div class="lf-btn-group">
+        <button type="button" class="lf-btn lf-btn-default">Left</button>
+        <button type="button" class="lf-btn lf-btn-default">Middle</button>
+        <button type="button" class="lf-btn lf-btn-default">Right</button>
+      </div>
+
+      <section>
+        <h2>.lf-btn-toolbar</h2>
+        <div class="lf-btn-toolbar" role="toolbar" style="margin: 0;">
+            <div class="lf-btn-group">
+              <button type="button" class="lf-btn lf-btn-default">1</button>
+              <button type="button" class="lf-btn lf-btn-default">2</button>
+              <button type="button" class="lf-btn lf-btn-default">3</button>
+              <button type="button" class="lf-btn lf-btn-default">4</button>
+            </div>
+            <div class="lf-btn-group">
+              <button type="button" class="lf-btn lf-btn-default">5</button>
+              <button type="button" class="lf-btn lf-btn-default">6</button>
+              <button type="button" class="lf-btn lf-btn-default">7</button>
+            </div>
+            <div class="lf-btn-group">
+              <button type="button" class="lf-btn lf-btn-default">8</button>
+            </div>
+      </div>
+      </section>
+
+      <section>
+        <h2>.lf-btn-group-lg, .lf-btn-group-sm, .lf-btn-group-sx</h2>
+            <div class="lf-btn-toolbar" role="toolbar">
+              <div class="lf-btn-group lf-btn-group-lg">
+                <button type="button" class="lf-btn lf-btn-default">Left</button>
+                <button type="button" class="lf-btn lf-btn-default">Middle</button>
+                <button type="button" class="lf-btn lf-btn-default">Right</button>
+              </div>
+            </div>
+            <div class="lf-btn-toolbar" role="toolbar">
+              <div class="lf-btn-group">
+                <button type="button" class="lf-btn lf-btn-default">Left</button>
+                <button type="button" class="lf-btn lf-btn-default">Middle</button>
+                <button type="button" class="lf-btn lf-btn-default">Right</button>
+              </div>
+            </div>
+            <div class="lf-btn-toolbar" role="toolbar">
+              <div class="lf-btn-group lf-btn-group-sm">
+                <button type="button" class="lf-btn lf-btn-default">Left</button>
+                <button type="button" class="lf-btn lf-btn-default">Middle</button>
+                <button type="button" class="lf-btn lf-btn-default">Right</button>
+              </div>
+            </div>
+            <div class="lf-btn-toolbar" role="toolbar">
+              <div class="lf-btn-group lf-btn-group-xs">
+                <button type="button" class="lf-btn lf-btn-default">Left</button>
+                <button type="button" class="lf-btn lf-btn-default">Middle</button>
+                <button type="button" class="lf-btn lf-btn-default">Right</button>
+              </div>
+            </div>
+      </section>
+
+      <section>
+        <h2>.lf-btn-group-vertical</h2>
+        <div class="lf-btn-group-vertical">
+          <button type="button" class="lf-btn lf-btn-default">Button</button>
+          <button type="button" class="lf-btn lf-btn-default">Button</button>
+          <div class="lf-btn-group">
+            <button id="lf-btnGroupVerticalDrop1" type="button" class="lf-btn lf-btn-default dropdown-toggle" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="lf-btnGroupVerticalDrop1">
+              <li><a href="#">Dropdown link</a></li>
+              <li><a href="#">Dropdown link</a></li>
+            </ul>
+          </div>
+          <button type="button" class="lf-btn lf-btn-default">Button</button>
+          <button type="button" class="lf-btn lf-btn-default">Button</button>
+          <div class="lf-btn-group">
+            <button id="lf-btnGroupVerticalDrop2" type="button" class="lf-btn lf-btn-default dropdown-toggle" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="lf-btnGroupVerticalDrop2">
+              <li><a href="#">Dropdown link</a></li>
+              <li><a href="#">Dropdown link</a></li>
+            </ul>
+          </div>
+          <div class="lf-btn-group">
+            <button id="lf-btnGroupVerticalDrop3" type="button" class="lf-btn lf-btn-default dropdown-toggle" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="lf-btnGroupVerticalDrop3">
+              <li><a href="#">Dropdown link</a></li>
+              <li><a href="#">Dropdown link</a></li>
+            </ul>
+          </div>
+          <div class="lf-btn-group">
+            <button id="lf-btnGroupVerticalDrop4" type="button" class="lf-btn lf-btn-default dropdown-toggle" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="lf-btnGroupVerticalDrop4">
+              <li><a href="#">Dropdown link</a></li>
+              <li><a href="#">Dropdown link</a></li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
