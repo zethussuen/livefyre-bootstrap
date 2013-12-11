@@ -1,4 +1,64 @@
+/**
+* Themes an .lf-popover
+* @mixin
+*/
+.make-lf-popover-theme(
+  @bg;
+  @color;
+  @border;
+  @arrow-color;
+  @arrow-outer-fallback-color;
+  @arrow-outer-color;) {
+  background-color: @bg;
+  border: @border;
+
+  .lf-popover-title {
+    background-color: @bg;
+    color: @color;
+  }
+
+  .lf-popover-content {
+    color: @color;
+  }
+
+  &.top .lf-arrow {
+    border-top-color: @arrow-outer-fallback-color; // IE8 fallback
+    border-top-color: @arrow-outer-color;
+    &:after {
+      border-top-color: @arrow-color;
+    }
+  }
+  &.right .lf-arrow {
+    border-right-color: @arrow-outer-fallback-color; // IE8 fallback
+    border-right-color: @arrow-outer-color;
+    &:after {
+      border-right-color: @arrow-color;
+    }
+  }
+  &.bottom .lf-arrow {
+    border-bottom-color: @arrow-outer-fallback-color; // IE8 fallback
+    border-bottom-color: @arrow-outer-color;
+    &:after {
+      border-bottom-color: @arrow-color;
+    }
+  }
+
+  &.left .lf-arrow {
+    border-left-color: @arrow-outer-fallback-color; // IE8 fallback
+    border-left-color: @arrow-outer-color;
+    &:after {
+      border-left-color: @arrow-color;
+    }
+  }
+}
+
+/**
+* .lf-popover
+* Default theme for popovers, dark background
+* @theme
+*/
 .lf-popover {
+  .make-lf-popover-theme(@popover-dark-bg, #ffffff, 0, @popover-dark-arrow-color, @popover-dark-arrow-outer-fallback-color, @popover-dark-arrow-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -7,10 +67,7 @@
   max-width: @popover-max-width;
   padding: 1px;
   text-align: left;
-  background-color: @popover-bg;
   background-clip: padding-box;
-  border: 1px solid @popover-fallback-border-color;
-  border: 1px solid @popover-border-color;
   border-radius: @border-radius-large;
   .box-shadow(0 0px 10px 0 rgba(0,0,0,.2));
   white-space: normal;
@@ -23,58 +80,19 @@
 
 .lf-popover-title {
   margin: 0;
-  color: @lf-gray-darker;
   padding: 14px 14px 0px;
   font-size: @font-size-small;
   font-weight: bold;
   line-height: 18px;
-  background-color: @popover-bg;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
   text-align: center;
 }
 
 .lf-popover-content {
-  color: @lf-gray-darker;
   padding: 10px 14px;
   font-size: 11px;
   text-align: center;
-}
-
-.lf-popover.dark {
-  background-color: @popover-dark-bg;
-  border: 0;
-
-  .lf-popover-title {
-    color: #fff;
-    background-color: @popover-dark-bg;
-  }
-
-  .lf-popover-content {
-    color: #fff;
-    padding: 10px 14px;
-    font-size: 11px;
-    text-align: center;
-  }
-}
-
-.lf-popover .lf-arrow {
-  &,
-  &:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-  }
-}
-.lf-popover .lf-arrow {
-  border-width: @popover-arrow-outer-width;
-}
-.lf-popover .lf-arrow:after {
-  border-width: @popover-arrow-width;
-  content: "";
 }
 
 .lf-popover {
@@ -82,15 +100,12 @@
     left: 50%;
     margin-left: -@popover-arrow-outer-width;
     border-bottom-width: 0;
-    border-top-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-top-color: @popover-arrow-outer-color;
     bottom: -@popover-arrow-outer-width;
     &:after {
       content: " ";
       bottom: 1px;
       margin-left: -@popover-arrow-width;
       border-bottom-width: 0;
-      border-top-color: @popover-arrow-color;
     }
   }
   &.right .lf-arrow {
@@ -98,29 +113,23 @@
     left: -@popover-arrow-outer-width;
     margin-top: -@popover-arrow-outer-width;
     border-left-width: 0;
-    border-right-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-right-color: @popover-arrow-outer-color;
     &:after {
       content: " ";
       left: 1px;
       bottom: -@popover-arrow-width;
       border-left-width: 0;
-      border-right-color: @popover-arrow-color;
     }
   }
   &.bottom .lf-arrow {
     left: 50%;
     margin-left: -@popover-arrow-outer-width;
     border-top-width: 0;
-    border-bottom-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-bottom-color: @popover-arrow-outer-color;
     top: -@popover-arrow-outer-width;
     &:after {
       content: " ";
       top: 1px;
       margin-left: -@popover-arrow-width;
       border-top-width: 0;
-      border-bottom-color: @popover-arrow-color;
     }
   }
 
@@ -129,48 +138,21 @@
     right: -@popover-arrow-outer-width;
     margin-top: -@popover-arrow-outer-width;
     border-right-width: 0;
-    border-left-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-left-color: @popover-arrow-outer-color;
     &:after {
       content: " ";
       right: 1px;
       border-right-width: 0;
-      border-left-color: @popover-arrow-color;
       bottom: -@popover-arrow-width;
     }
   }
-
 }
 
-.lf-popover.dark {
-  &.top .lf-arrow {
-    border-top-color: @popover-dark-arrow-outer-fallback-color; // IE8 fallback
-    border-top-color: @popover-dark-arrow-outer-color;
-    &:after {
-      border-top-color: @popover-dark-arrow-color;
-    }
-  }
-  &.right .lf-arrow {
-    border-right-color: @popover-dark-arrow-outer-fallback-color; // IE8 fallback
-    border-right-color: @popover-dark-arrow-outer-color;
-    &:after {
-      border-right-color: @popover-dark-arrow-color;
-    }
-  }
-  &.bottom .lf-arrow {
-    border-bottom-color: @popover-dark-arrow-outer-fallback-color; // IE8 fallback
-    border-bottom-color: @popover-dark-arrow-outer-color;
-    &:after {
-      border-bottom-color: @popover-dark-arrow-color;
-    }
-  }
 
-  &.left .lf-arrow {
-    border-left-color: @popover-dark-arrow-outer-fallback-color; // IE8 fallback
-    border-left-color: @popover-dark-arrow-outer-color;
-    &:after {
-      border-left-color: @popover-dark-arrow-color;
-    }
-  }
-
+/**
+* .lf-popover.light
+* Light theme for popovers
+* @theme
+*/
+.lf-popover.light {
+  .make-lf-popover-theme(@popover-bg, @lf-gray-darker, 1px solid @popover-border-color, @popover-arrow-color, @popover-arrow-outer-fallback-color, @popover-arrow-outer-color);
 }
