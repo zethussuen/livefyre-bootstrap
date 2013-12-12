@@ -5,34 +5,59 @@
 
 // LF colors
 // -------------------------
-@lf-grey:      #2F3440;
-@lf-purple:    #7168A5;
-@lf-blue:      #0F98EC;
-@lf-green:     #63C685;
-@lf-yellow:    #FEB33B;
-@lf-orange:    #E65B3F;
-@lf-red:       #F53E52;
+@lf-gray-darker:    #2F3440;
+@lf-gray-dark:      tint(@lf-gray-darker, 30%);
+@lf-gray:           tint(@lf-gray-darker, 60%);
+@lf-gray-light:     tint(@lf-gray-darker, 80%);
+@lf-gray-lighter:   tint(@lf-gray-darker, 95%);
 
-@lf-light-grey:      lighten(@lf-grey, 15%);
-@lf-light-purple:    lighten(@lf-purple, 15%);
-@lf-light-blue:      lighten(@lf-blue, 15%);
-@lf-light-green:     lighten(@lf-green, 15%);
-@lf-light-yellow:    lighten(@lf-yellow, 15%);
-@lf-light-orange:    lighten(@lf-orange, 15%);
-@lf-light-red:       lighten(@lf-red, 15%);
+@lf-purple:         #7168A5;
+@lf-blue:           #0F98EC;
+@lf-green:          #63C685;
+@lf-yellow:         #FEB33B;
+@lf-orange:         #E65B3F;
+@lf-red:            #F53E52;
+
+@lf-purple-dark:    shade(@lf-purple, 15%);
+@lf-blue-dark:      shade(@lf-blue, 15%);
+@lf-green-dark:     shade(@lf-green, 15%);
+@lf-yellow-dark:    shade(@lf-yellow, 15%);
+@lf-orange-dark:    shade(@lf-orange, 15%);
+@lf-red-dark:       shade(@lf-red, 15%);
+
+@lf-purple-light:   tint(@lf-purple, 15%);
+@lf-blue-light:     tint(@lf-blue, 15%);
+@lf-green-light:    tint(@lf-green, 15%);
+@lf-yellow-light:   tint(@lf-yellow, 15%);
+@lf-orange-light:   tint(@lf-orange, 15%);
+@lf-red-light:      tint(@lf-red, 15%);
 
 // Brand colors
 // -------------------------
-@brand-primary:   #FF5E00;
-@brand-success:   @lf-green;
-@brand-warning:   @lf-yellow;
-@brand-danger:    @lf-red;
-@brand-info:      @lf-blue;
+@brand-primary:     #FF5E00;
+@brand-success:     @lf-green;
+@brand-warning:     @lf-yellow;
+@brand-danger:      @lf-red;
+@brand-info:        @lf-blue;
+
+
+
+/**
+ * Links
+ */
+
+@link-color:            @lf-blue;
+@link-hover-color:      darken(@lf-blue, 15%);
+
+/**
+ * Links
+ */
+@link-color:            @lf-blue;
+@link-hover-color:      darken(@lf-blue, 15%);
 
 /**
  * Navbar
  */
-
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
@@ -67,3 +92,36 @@
 @state-danger-text:              #FFFFFF;
 @state-danger-bg:                @lf-red;
 @state-danger-border:            @lf-red;
+
+
+/**
+ * Buttons
+ */
+
+@btn-font-weight:                500;
+
+@btn-default-color:              @lf-gray-dark;
+@btn-default-bg:                 @lf-gray-lighter;
+@btn-default-border:             tint(@lf-gray-darker, 65%);
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @lf-orange;
+@btn-primary-border:             @lf-orange-dark;
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @lf-green;
+@btn-success-border:             @lf-green-dark;
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @lf-blue;
+@btn-info-border:                @lf-blue-dark;
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @lf-yellow;
+@btn-warning-border:             @lf-yellow-dark;
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @lf-red;
+@btn-danger-border:              @lf-red-dark;
+
+@btn-link-disabled-color:        @gray-light;
