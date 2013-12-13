@@ -3,61 +3,63 @@
  */
 @import "../../lib/bootstrap/less/variables.less";
 
+
 // LF colors
 // -------------------------
+
 @lf-gray-darker:    #2F3440;
 @lf-gray-dark:      tint(@lf-gray-darker, 30%);
 @lf-gray:           tint(@lf-gray-darker, 60%);
 @lf-gray-light:     tint(@lf-gray-darker, 80%);
 @lf-gray-lighter:   tint(@lf-gray-darker, 95%);
 
-@lf-purple:         #7168A5;
-@lf-blue:           #0F98EC;
-@lf-green:          #63C685;
-@lf-yellow:         #FEB33B;
-@lf-orange:         #E65B3F;
-@lf-red:            #F53E52;
+@lf-purple:    #7168A5;
+@lf-blue:      #0F98EC;
+@lf-green:     #63C685;
+@lf-yellow:    #FEB33B;
+@lf-orange:    #E65B3F;
+@lf-red:       #F53E52;
 
-@lf-purple-dark:    shade(@lf-purple, 15%);
-@lf-blue-dark:      shade(@lf-blue, 15%);
-@lf-green-dark:     shade(@lf-green, 15%);
-@lf-yellow-dark:    shade(@lf-yellow, 15%);
-@lf-orange-dark:    shade(@lf-orange, 15%);
-@lf-red-dark:       shade(@lf-red, 15%);
+@lf-purple-dark:    darken(@lf-purple, 15%);
+@lf-blue-dark:      darken(@lf-blue, 15%);
+@lf-green-dark:     darken(@lf-green, 15%);
+@lf-yellow-dark:    darken(@lf-yellow, 15%);
+@lf-orange-dark:    darken(@lf-orange, 15%);
+@lf-red-dark:       darken(@lf-red, 15%);
 
-@lf-purple-light:   tint(@lf-purple, 15%);
-@lf-blue-light:     tint(@lf-blue, 15%);
-@lf-green-light:    tint(@lf-green, 15%);
-@lf-yellow-light:   tint(@lf-yellow, 15%);
-@lf-orange-light:   tint(@lf-orange, 15%);
-@lf-red-light:      tint(@lf-red, 15%);
+@lf-purple-light:    darken(@lf-purple, 15%);
+@lf-blue-light:      darken(@lf-blue, 15%);
+@lf-green-light:     darken(@lf-green, 15%);
+@lf-yellow-light:    darken(@lf-yellow, 15%);
+@lf-orange-light:    darken(@lf-orange, 15%);
+@lf-red-light:       darken(@lf-red, 15%);
 
 // Brand colors
 // -------------------------
-@brand-primary:     #FF5E00;
-@brand-success:     @lf-green;
-@brand-warning:     @lf-yellow;
-@brand-danger:      @lf-red;
-@brand-info:        @lf-blue;
+
+@brand-primary:   #FF5E00;
+@brand-success:   @lf-green;
+@brand-warning:   @lf-yellow;
+@brand-danger:    @lf-red;
+@brand-info:      @lf-blue;
 
 
-
-/**
- * Links
- */
-
-@link-color:            @lf-blue;
-@link-hover-color:      darken(@lf-blue, 15%);
+// Components
+// -------------------------
+@component-active-bg:       @lf-blue;
+@border-radius-xsmall:		2px;
 
 /**
  * Links
  */
+
 @link-color:            @lf-blue;
 @link-hover-color:      darken(@lf-blue, 15%);
 
 /**
  * Navbar
  */
+
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
@@ -76,7 +78,6 @@
 
 // Form states and alerts
 // -------------------------
-
 @state-success-text:             #FFFFFF;
 @state-success-bg:               @lf-green;
 @state-success-border:           @lf-green;
@@ -102,7 +103,7 @@
 
 @btn-default-color:              @lf-gray-dark;
 @btn-default-bg:                 @lf-gray-lighter;
-@btn-default-border:             tint(@lf-gray-darker, 65%);
+@btn-default-border:             @lf-gray-light;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @lf-orange;
@@ -125,3 +126,42 @@
 @btn-danger-border:              @lf-red-dark;
 
 @btn-link-disabled-color:        @gray-light;
+
+
+// Tooltips
+// -------------------------
+@tooltip-max-width: 			200px;
+@tooltip-arrow-width:           5px;
+
+@tooltip-color:					#ffffff;
+@tooltip-light-color:           @lf-gray-dark;
+
+@tooltip-bg:					#232731;
+@tooltip-light-bg:              #ffffff;
+
+@tooltip-arrow-color:           @tooltip-bg;
+@tooltip-light-arrow-color:     @tooltip-light-bg;
+
+// Popovers
+// -------------------------
+@popover-bg:                          #fff;
+@popover-dark-bg:                     #232731;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-arrow-width:                 10px;
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-color:                 #fff;
+@popover-arrow-outer-color:           rgba(0,0,0,.25);
+@popover-arrow-outer-fallback-color:  #999;
+
+@popover-dark-arrow-color:                 @popover-dark-bg;
+@popover-dark-arrow-outer-color:           @popover-dark-bg;
+@popover-dark-arrow-outer-fallback-color:  @popover-dark-bg;
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:                    #fff;
+@dropdown-border:                transparent;
+@dropdown-link-hover-color:      #FFFFFF;
+@dropdown-link-hover-bg:         @lf-blue;
