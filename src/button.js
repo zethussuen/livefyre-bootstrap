@@ -14,16 +14,18 @@ function Button (command, opts) {
 }
 inherits(Button, View);
 
+// DOM Event Listeners
+Button.prototype.events = {
+    click: '_execute'
+};
+
+Button.prototype.elClass += ' lf-btn';
+
 /**
  * The CSS Class to put on this.$el when the command is
  * not allowed to be executed
  */
 Button.prototype.disabledClass = 'disabled';
-
-// DOM Event Listeners
-Button.prototype.events = {
-    click: '_execute'
-};
 
 /**
  * Execute the button's command
