@@ -38,6 +38,12 @@ describe('command', function () {
             cmd.enable();
             expect(cmd.canExecute()).to.equal(true);
         });
+        it('fires the change:canExecute event with true', function () {
+            var spy = sinon.spy();
+            cmd.on('change:canExecute', spy);
+            cmd.enable();
+            expect(spy).to.have.been.called;
+        });
     });
 
     describe('.disable()', function () {
