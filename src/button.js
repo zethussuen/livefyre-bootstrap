@@ -1,6 +1,11 @@
+'use strict';
+
 var inherits = require('inherits');
 var View = require('view');
 
+/**
+ * A View that, when clicked, executes a Command
+ */
 function Button (command, opts) {
     View.call(this, opts);
     if (command) {
@@ -9,16 +14,32 @@ function Button (command, opts) {
 }
 inherits(Button, View);
 
+/**
+ * The CSS Class to put on this.$el when the command is
+ * not allowed to be executed
+ */
 Button.prototype.disabledClass = 'disabled';
 
+// DOM Event Listeners
 Button.prototype.events = {
     click: '_execute'
 };
 
+/**
+ * Execute the button's command
+ * @protected
+ */
 Button.prototype._execute = function _execute() {
+    // TODO: Don't execute if not enabled
     this._command.execute();
 };
 
+/**
+ * Set the Command that the Button executes.
+ * Only intended to be called once
+ * @protected
+ * @param command {Command}
+ */
 Button.prototype._setCommand = function (command) {
     var self = this;
     this._command = command;
@@ -28,6 +49,11 @@ Button.prototype._setCommand = function (command) {
     });
 };
 
+/**
+ * Set whether the Button is enabled or not
+ * @protected
+ * @param {boolean} isEnabled - Whether the button should be enabled
+ */
 Button.prototype._setEnabled = function (isEnabled) {
     this.$el.toggleClass(this.disabledClass, ! isEnabled);
 };

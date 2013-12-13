@@ -38,7 +38,6 @@ describe('Button', function () {
         var spy = sinon.spy();
         var cmd = new Command(spy);
         var button = new Button(cmd);
-        console.log('hi ben');
         button.$el.click();
         expect(spy).to.have.been.called;
     });
