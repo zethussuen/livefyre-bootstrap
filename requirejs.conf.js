@@ -13,8 +13,7 @@ require.config({
     json: 'lib/requirejs-plugins/src/json',
     bootstrap: 'lib/bootstrap/dist/js/bootstrap',
     sinon : 'lib/sinonjs/sinon',
-    'sinon-chai': 'lib/sinon-chai/lib/sinon-chai',
-    view: 'lib/view/src/view'
+    'sinon-chai': 'lib/sinon-chai/lib/sinon-chai'
   },
   packages: [{
      name: "livefyre-bootstrap",
@@ -40,6 +39,10 @@ require.config({
   },{
     name: "stream",
     location: "lib/stream/src"
+  },{
+    name: "view",
+    location: 'lib/view/src',
+    main: 'view'
   }],
   shim: {
     bootstrap: {
