@@ -1,0 +1,118 @@
+.lf-modal-open {
+	overflow: hidden;
+}
+
+.lf-modal {
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: @zindex-modal-background;
+	// TODO: Add CSS3 Animations for Transition
+	&.bounce .lf-modal-dialog {
+		.animation(modalSpringIn 0.2s cubic-bezier(.48, 1.66, .75, 1.27));
+	}
+	&.in .lf-modal-dialog { .translate(0, 0)}
+}
+
+.lf-modal-dialog {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	padding: 10px;
+	z-index: (@zindex-modal-background + 10);
+}
+
+.lf-modal-content {
+	position: relative;
+	color: @lf-gray-darker;
+	background-color: @modal-content-bg;
+	border: 0;
+	broder-radius: @border-radius-large;
+	.box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+	background-clip: padding-box;
+	outline: none;
+	text-align: center;
+}
+
+.lf-modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: (@zindex-modal-background - 10);
+	background-color: @modal-backdrop-bg;
+	&.fade { .opacity(0); }
+	&.in { .opacity(.9); }
+}
+
+.lf-modal-header {
+	padding: @modal-title-padding;
+	background-color: @modal-header-bg;
+	border-bottom: 1px solid @modal-header-border-color;
+	min-height: (@modal-title-padding + @modal-title-line-height);
+	.border-top-radius(@border-radius-large);
+}
+
+.lf-modal-header .close {
+	margin-top: 0;
+}
+
+.lf-modal-title {
+	color: @lf-gray;
+	font-weight: 400;
+	margin: 0;
+	line-height: @modal-title-line-height;
+	text-align: center;
+}
+
+.lf-modal-body {
+	position: relative;
+	text-align: center;
+	padding: (@modal-inner-padding * 2) @modal-inner-padding @modal-inner-padding;
+}
+
+.lf-modal-footer {
+	margin-top: 0;
+	padding: (@modal-inner-padding / 3) @modal-inner-padding (@modal-inner-padding * 2);
+	text-align: center;
+	border-top: 0;
+	.clearfix();
+}
+
+@media screen and (min-width: @screen-sm-min) {
+	.lf-modal-dialog {
+		width: 600px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.lf-modal-content {
+		.box-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+	}
+}
+
+@keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }
+}
+
+@-webkit-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
+}
+
+@-o-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
+}
+
+@-moz-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
+}
