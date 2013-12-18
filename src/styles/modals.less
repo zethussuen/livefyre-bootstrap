@@ -13,6 +13,10 @@
 	left: 0;
 	z-index: @zindex-modal-background;
 	// TODO: Add CSS3 Animations for Transition
+	&.bounce .lf-modal-dialog {
+		.animation(modalSpringIn 0.2s cubic-bezier(.48, 1.66, .75, 1.27));
+	}
+	&.in .lf-modal-dialog { .translate(0, 0)}
 }
 
 .lf-modal-dialog {
@@ -91,4 +95,24 @@
 	.lf-modal-content {
 		.box-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
 	}
+}
+
+@keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }
+}
+
+@-webkit-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
+}
+
+@-o-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
+}
+
+@-moz-keyframes modalSpringIn {
+	from { .scale(0); }
+	to { .scale(1); }	
 }
