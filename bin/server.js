@@ -1,7 +1,10 @@
+#!/usr/bin/env node
+
 var express = require('express');
 var lessMiddleware = require('less-middleware');
+var portfinder = require('portfinder');
 var pubDir = __dirname + '/..';
-var lfBootstrapFonts = __dirname + '/../lib/livefyre-bootstrap/src/fonts';
+var lfBootstrapFonts = pubDir + '/src/fonts';
 
 var app = express();
 
@@ -15,7 +18,20 @@ app.use(lessMiddleware({
     root: pubDir,
     paths: ['lib/']
 }));
-app.use('/dev/fonts', express.static(lfBootstrapFonts));
+
+app.use('/dist/fonts', express.static(lfBootstrapFonts));
+app.use('/', express.directory(pubDir));
 app.use('/', express.static(pubDir));
 
-app.listen(8080);
+portfinder.basePort = 8080;
+portfinder.getPort(function (err, port) {
+    if (err) throw err;
+    app.listen(port, function () {
+        console.log('livefyre-bootstrap/ listening on port: ' + port);
+    });
+});
+
+process.on('SIGINT', function () {
+    log('http-server stopped.'.red);
+    process.exit();
+});
