@@ -17,6 +17,8 @@ Run the dev server with
 
     npm start
 
+The dev server compiles the livefyre-bootstrap less, and serves css.
+
 Visit /demos/main to see it in action
 
 ![In action](http://d.pr/i/fFnP+)
