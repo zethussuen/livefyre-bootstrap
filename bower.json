@@ -14,6 +14,8 @@
   "devDependencies": {
     "cajon": "git@github.com:requirejs/cajon.git#~0.1.11",
     "chai": "~1.8.1",
-    "less.js": "~1.5.1"
+    "less.js": "~1.5.1",
+    "require-css": "~0.1.1",
+    "mocha": "~1.16.2"
   }
 }

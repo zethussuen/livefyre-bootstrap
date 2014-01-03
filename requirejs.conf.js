@@ -13,11 +13,18 @@ require.config({
     json: 'lib/requirejs-plugins/src/json',
     bootstrap: 'lib/bootstrap/dist/js/bootstrap',
     sinon : 'lib/sinonjs/sinon',
-    'sinon-chai': 'lib/sinon-chai/lib/sinon-chai'
+    'sinon-chai': 'lib/sinon-chai/lib/sinon-chai',
+    normalize: 'lib/require-less/normalize',
+    less: 'lib/require-less/less',
+    lessc: 'lib/require-less/lessc',
+    css: 'lib/require-css/css'
   },
   packages: [{
      name: "livefyre-bootstrap",
      location: "src/"
+  },{
+     name: "livefyre-bootstrap/styles",
+     location: "dist/styles"
   },{
      name: "tests",
      location: "tests"
