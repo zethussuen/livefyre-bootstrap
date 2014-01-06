@@ -32,6 +32,6 @@ portfinder.getPort(function (err, port) {
 });
 
 process.on('SIGINT', function () {
-    log('http-server stopped.'.red);
+    console.log('http-server stopped.'.red);
     process.exit();
 });
