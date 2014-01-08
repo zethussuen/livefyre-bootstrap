@@ -7704,6 +7704,7 @@ textarea.lf .lf-input-lg {
 }
 .lf .lf-popover.bottom .lf-arrow {
   border-bottom-color: #232731;
+  border-top-width: 0;
 }
 .lf .lf-popover.bottom .lf-arrow:after {
   border-bottom-color: #232731;
@@ -7772,7 +7773,6 @@ textarea.lf .lf-input-lg {
   position: absolute;
   left: 50%;
   margin-left: -11px;
-  border-top-width: 0;
   top: -11px;
 }
 .lf .lf-popover.bottom .lf-arrow:after {
@@ -7829,6 +7829,7 @@ textarea.lf .lf-input-lg {
 .lf .lf-popover.light.bottom .lf-arrow {
   border-bottom-color: #999999;
   border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
 }
 .lf .lf-popover.light.bottom .lf-arrow:after {
   border-bottom-color: #ffffff;
