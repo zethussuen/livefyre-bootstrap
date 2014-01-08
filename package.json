@@ -14,7 +14,7 @@
     "hint": "./node_modules/jshint/bin/jshint src; echo",
     "lessc": "./node_modules/less/bin/lessc --include-path=lib/ src/styles/all.less dist/styles/all.css",
     "jsdoc": "rm -rf docs/api && ./node_modules/jsdoc/jsdoc -c tools/jsdoc.conf.json",
-    "build": "mkdir -p dist && ./node_modules/less/bin/lessc src/styles/all.less > dist/lf.css",
+    "build": "mkdir -p dist && ./node_modules/less/bin/lessc src/styles/all.less > dist/lf.css --include-path=lib",
     "build-docs": "cd ./demos/docs/ && jekyll build"
   },
   "devDependencies": {
