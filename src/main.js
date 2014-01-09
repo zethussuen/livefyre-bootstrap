@@ -1,2 +1,2 @@
-require('livefyre-bootstrap/toggles');
+require('toggles');
 require('bootstrap');
