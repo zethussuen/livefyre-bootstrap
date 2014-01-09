@@ -49,6 +49,7 @@
   &.bottom .lf-arrow {
     border-bottom-color: @arrow-outer-fallback-color; // IE8 fallback
     border-bottom-color: @arrow-outer-color;
+    border-top-width: 0;
     &:after {
       border-bottom-color: @arrow-color;
     }
@@ -138,7 +139,6 @@
     position: absolute;
     left: 50%;
     margin-left: -@popover-arrow-outer-width;
-    border-top-width: 0;
     top: -@popover-arrow-outer-width;
     &:after {
       content: " ";
