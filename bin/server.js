@@ -11,16 +11,12 @@ var app = express();
 app.use(express.logger());
 
 app.use(lessMiddleware({
-    //src: '/src/styles',
-    //dest: '/dist/styles',
-    src: '/',
-    dest: '/',
+    src: '/src/styles',
+    dest: '/dist',
     compress: false,
     force: true,
     root: pubDir,
-    paths: [pubDir, 'lib/'],
-    sourceMap: true
-  , debug: true
+    paths: [pubDir]
 }));
 
 app.use('/dist/fonts', express.static(lfBootstrapFonts));
