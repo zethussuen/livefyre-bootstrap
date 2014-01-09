@@ -1,3 +1,10 @@
 #!/bin/bash
+
+# build the compiled versions
 ./node_modules/less/bin/lessc src/styles/all.less > dist/all.css
 node ./r.js -o build.js
+
+# copy over some useful files
+cp src/styles/variables.less dist/
+cp -R src/fonts dist/
+
