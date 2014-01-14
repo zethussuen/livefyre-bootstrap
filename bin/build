@@ -9,6 +9,6 @@ $ROOT/node_modules/less/bin/lessc src/styles/all.less > dist/all.css
 node $ROOT/r.js -o build.js
 
 # copy over some useful files
-cp $ROOT/src/styles/variables.less dist/
 cp -R $ROOT/src/fonts dist/
+cp -R $ROOT/lib/bootstrap/dist/fonts dist/
 
