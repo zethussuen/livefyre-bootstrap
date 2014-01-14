@@ -1,10 +1,9 @@
 ({
-  name: 'main'
-  , out: 'dist/main.js'
-  , baseUrl: 'src/'
-  , paths: {
-    bootstrap: '../lib/bootstrap/dist/js/bootstrap',
+  mainConfigFile: './requirejs.conf.js',
+  name: 'livefyre-bootstrap',
+  out: 'dist/main.js',
+  paths: {
     jquery: 'empty:'
-  }
-  , cjsTranslate: true
+  },
+  cjsTranslate: true
 })

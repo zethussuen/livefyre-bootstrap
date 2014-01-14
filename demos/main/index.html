@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="lf">
 <head>
-  <link href="/dist/all.css" rel="stylesheet">
+  <link href="../../dist/all.css" rel="stylesheet">
   <style>
     .row {
       margin-bottom: 50px;
@@ -692,6 +692,9 @@
 <script src="../../lib/cajon/cajon.js"></script>
 <script src="../../requirejs.conf.js"></script>
 <script>
+  require.config({
+    baseUrl: '../../'
+  });
   require(['livefyre-bootstrap']);
 </script>
 </body>

@@ -12,6 +12,9 @@
     <script src="../requirejs.conf.js"></script>
     <script>mocha.setup('bdd')</script>
     <script>
+      require.config({
+        baseUrl: '../'
+      });
       require(['tests/spec-list'], function (specs) {
         // prepend tests package name
         specs = specs.map(function (spec) {

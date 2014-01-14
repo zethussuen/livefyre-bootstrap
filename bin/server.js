@@ -19,7 +19,6 @@ app.use(lessMiddleware({
     paths: [pubDir]
 }));
 
-app.use('/dist/fonts', express.static(lfBootstrapFonts));
 app.use('/', express.directory(pubDir));
 app.use('/', express.static(pubDir));
 
