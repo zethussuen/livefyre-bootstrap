@@ -1,7 +1,7 @@
 require.config({
-  baseUrl: '/',
   paths: {
     jquery: 'lib/jquery/jquery',
+    bootstrap: 'lib/bootstrap/dist/js/bootstrap',
     text: 'lib/requirejs-text/text',
     base64: 'lib/base64/base64',
     hogan: 'lib/hogan/web/builds/2.0.0/hogan-2.0.0.amd',
@@ -11,7 +11,6 @@ require.config({
     mocha: 'lib/mocha/mocha',
     chai: 'lib/chai/chai',
     json: 'lib/requirejs-plugins/src/json',
-    bootstrap: 'lib/bootstrap/dist/js/bootstrap',
     sinon : 'lib/sinonjs/sinon',
     'sinon-chai': 'lib/sinon-chai/lib/sinon-chai',
     normalize: 'lib/require-less/normalize',
@@ -21,7 +20,7 @@ require.config({
   },
   packages: [{
      name: "livefyre-bootstrap",
-     location: "src/"
+     location: "src"
   },{
      name: "livefyre-bootstrap/styles",
      location: "dist/styles"

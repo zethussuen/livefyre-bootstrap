@@ -12,14 +12,13 @@ app.use(express.logger());
 
 app.use(lessMiddleware({
     src: '/src/styles',
-    dest: '/dist/styles',
+    dest: '/dist',
     compress: false,
     force: true,
     root: pubDir,
-    paths: ['lib/']
+    paths: [pubDir]
 }));
 
-app.use('/dist/fonts', express.static(lfBootstrapFonts));
 app.use('/', express.directory(pubDir));
 app.use('/', express.static(pubDir));
 
