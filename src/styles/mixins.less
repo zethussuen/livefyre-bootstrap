@@ -160,12 +160,12 @@
 
 // Opacity
 .opacity(@opacity) {
-  opacity: @opacity / 100;
+  opacity: @opacity;
   filter: ~"alpha(opacity=@{opacity})";
   -ms-filter: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)", @opacity);
-  -moz-opacity: @opacity / 100;
-  -khtml-opacity: @opacity / 100;
-  -webkit-opacity: @opacity / 100;
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
 }
 
 /* ANIMATIONS */
