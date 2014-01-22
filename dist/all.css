@@ -1975,14 +1975,13 @@ textarea.lf .input-lg {
 fieldset[disabled] .lf .btn {
   cursor: not-allowed;
   pointer-events: none;
-  opacity: 0.65;
   filter: alpha(opacity=65);
-  opacity: 0.006500000000000001;
+  opacity: 0.65;
   filter: alpha(opacity=0.65);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.65)";
-  -moz-opacity: 0.006500000000000001;
-  -khtml-opacity: 0.006500000000000001;
-  -webkit-opacity: 0.006500000000000001;
+  -moz-opacity: 0.65;
+  -khtml-opacity: 0.65;
+  -webkit-opacity: 0.65;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -4792,28 +4791,26 @@ a.lf .thumbnail.active {
   line-height: 1;
   color: #acaeb3;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
   filter: alpha(opacity=20);
-  opacity: 0.002;
+  opacity: 0.2;
   filter: alpha(opacity=0.2);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.2)";
-  -moz-opacity: 0.002;
-  -khtml-opacity: 0.002;
-  -webkit-opacity: 0.002;
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  -webkit-opacity: 0.2;
 }
 .lf .close:hover,
 .lf .close:focus {
   color: #acaeb3;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.5;
   filter: alpha(opacity=50);
-  opacity: 0.005;
+  opacity: 0.5;
   filter: alpha(opacity=0.5);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
-  -moz-opacity: 0.005;
-  -khtml-opacity: 0.005;
-  -webkit-opacity: 0.005;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 button.lf .close {
   padding: 0;
@@ -4892,14 +4889,13 @@ button.lf .close {
   -webkit-opacity: 0;
 }
 .lf .modal-backdrop.in {
-  opacity: 0.5;
   filter: alpha(opacity=50);
-  opacity: 0.005;
+  opacity: 0.5;
   filter: alpha(opacity=0.5);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
-  -moz-opacity: 0.005;
-  -khtml-opacity: 0.005;
-  -webkit-opacity: 0.005;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 .lf .modal-header {
   padding: 15px;
@@ -4969,14 +4965,13 @@ button.lf .close {
   -webkit-opacity: 0;
 }
 .lf .tooltip.in {
-  opacity: 0.9;
   filter: alpha(opacity=90);
-  opacity: 0.009000000000000001;
+  opacity: 0.9;
   filter: alpha(opacity=0.9);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.9)";
-  -moz-opacity: 0.009000000000000001;
-  -khtml-opacity: 0.009000000000000001;
-  -webkit-opacity: 0.009000000000000001;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
 }
 .lf .tooltip.top {
   margin-top: -3px;
@@ -5244,14 +5239,13 @@ button.lf .close {
   left: 0;
   bottom: 0;
   width: 15%;
-  opacity: 0.5;
   filter: alpha(opacity=50);
-  opacity: 0.005;
+  opacity: 0.5;
   filter: alpha(opacity=0.5);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
-  -moz-opacity: 0.005;
-  -khtml-opacity: 0.005;
-  -webkit-opacity: 0.005;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
@@ -5276,14 +5270,13 @@ button.lf .close {
   outline: none;
   color: #ffffff;
   text-decoration: none;
-  opacity: 0.9;
   filter: alpha(opacity=90);
-  opacity: 0.009000000000000001;
+  opacity: 0.9;
   filter: alpha(opacity=0.9);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.9)";
-  -moz-opacity: 0.009000000000000001;
-  -khtml-opacity: 0.009000000000000001;
-  -webkit-opacity: 0.009000000000000001;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
 }
 .lf .carousel-control .icon-prev,
 .lf .carousel-control .icon-next,
@@ -6078,14 +6071,13 @@ td.lf .visible-print {
 fieldset[disabled] .lf .lf-btn {
   cursor: not-allowed;
   pointer-events: none;
-  opacity: 0.65;
   filter: alpha(opacity=65);
-  opacity: 0.006500000000000001;
+  opacity: 0.65;
   filter: alpha(opacity=0.65);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.65)";
-  -moz-opacity: 0.006500000000000001;
-  -khtml-opacity: 0.006500000000000001;
-  -webkit-opacity: 0.006500000000000001;
+  -moz-opacity: 0.65;
+  -khtml-opacity: 0.65;
+  -webkit-opacity: 0.65;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -6641,14 +6633,13 @@ fieldset[disabled] .lf .lf-btn {
   text-shadow: none;
   -webkit-appearance: none;
   -moz-apperance: none;
-  opacity: 1;
   filter: alpha(opacity=100);
-  opacity: 0.01;
+  opacity: 1;
   filter: alpha(opacity=1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-  -moz-opacity: 0.01;
-  -khtml-opacity: 0.01;
-  -webkit-opacity: 0.01;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
 }
 .lf .lf-close:hover,
 .lf .lf-close:focus {
@@ -6657,14 +6648,13 @@ fieldset[disabled] .lf .lf-btn {
   cursor: pointer;
   background: rgba(47, 52, 64, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.15);
-  opacity: 1;
   filter: alpha(opacity=100);
-  opacity: 0.01;
+  opacity: 1;
   filter: alpha(opacity=1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-  -moz-opacity: 0.01;
-  -khtml-opacity: 0.01;
-  -webkit-opacity: 0.01;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
 }
 .lf .lf-close:active {
   background: rgba(47, 52, 64, 0.15);
@@ -7797,14 +7787,13 @@ textarea.lf .lf-input-lg {
   -webkit-opacity: 0;
 }
 .lf .lf-modal-backdrop.in {
-  opacity: 0.9;
   filter: alpha(opacity=90);
-  opacity: 0.009000000000000001;
+  opacity: 0.9;
   filter: alpha(opacity=0.9);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.9)";
-  -moz-opacity: 0.009000000000000001;
-  -khtml-opacity: 0.009000000000000001;
-  -webkit-opacity: 0.009000000000000001;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
 }
 .lf .lf-modal-header {
   padding: 15px;
@@ -8249,14 +8238,13 @@ textarea.lf .lf-input-lg {
   border-bottom-color: #232731;
 }
 .lf .lf-tooltip.in {
-  opacity: 1;
   filter: alpha(opacity=100);
-  opacity: 0.01;
+  opacity: 1;
   filter: alpha(opacity=1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-  -moz-opacity: 0.01;
-  -khtml-opacity: 0.01;
-  -webkit-opacity: 0.01;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
 }
 .lf .lf-tooltip.top {
   margin-top: -3px;
