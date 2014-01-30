@@ -16,7 +16,8 @@ require.config({
     normalize: 'lib/require-less/normalize',
     less: 'lib/require-less/less',
     lessc: 'lib/require-less/lessc',
-    css: 'lib/require-css/css'
+    css: 'lib/require-css/css',
+    almond: 'lib/almond/almond'
   },
   packages: [{
      name: "livefyre-bootstrap",

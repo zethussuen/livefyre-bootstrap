@@ -1,7 +1,7 @@
 ({
-  mainConfigFile: './requirejs.conf.js',
+  mainConfigFile: '../requirejs.conf.js',
   name: 'livefyre-bootstrap',
-  out: 'dist/main.js',
+  out: '../dist/main.js',
   paths: {
     jquery: 'empty:'
   },
