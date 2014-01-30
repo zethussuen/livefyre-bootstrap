@@ -19,7 +19,7 @@ inherits(Command, EventEmitter);
  * Execute the Command
  */
 Command.prototype.execute = function () {
-    this._execute();
+    this.canExecute() && this._execute.apply(this, arguments);
 };
 
 /**
