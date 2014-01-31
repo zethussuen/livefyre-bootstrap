@@ -8,6 +8,8 @@
   out: '../dist/livefyre-bootstrap.min.js',
   optimize: 'uglify2',
   cjsTranslate: true,
+  generateSourceMaps: true,
+  preserveLicenseComments: false,
   onBuildRead: function(moduleName, path, contents) {
     switch (moduleName) {
       case "jquery":

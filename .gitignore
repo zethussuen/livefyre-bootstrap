@@ -3,3 +3,4 @@
 .DS_Store
 /demos/docs/_gh_pages/
 npm-debug.log
+/dist/*.gz
