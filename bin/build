@@ -16,6 +16,3 @@ csso $ROOT/dist/all.css $ROOT/dist/livefyre-bootstrap.min.css
 cp -R $ROOT/src/fonts dist/
 cp -R $ROOT/lib/bootstrap/dist/fonts dist/
 
-#  gzip
-gzip -9 < dist/livefyre-bootstrap.min.js > dist/livefyre-bootstrap.min.js.gz
-gzip -9 < dist/livefyre-bootstrap.min.css > dist/livefyre-bootstrap.min.css.gz
