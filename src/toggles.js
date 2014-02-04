@@ -93,8 +93,7 @@
 
   window.addEventListener('click', function (e) {
     toggle = findToggle(e.target);
-    //handle click only if not on handle
-    if (!toggle || e.target.classList.contains('lf-toggle-handle')) return;
+    if (!toggle) return;
     var handle      = toggle.querySelector('.lf-toggle-handle');
     var toggleWidth = toggle.offsetWidth;
     var handleWidth = handle.offsetWidth;
