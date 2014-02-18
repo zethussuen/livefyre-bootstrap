@@ -12,7 +12,7 @@
       "email": "crichards@livefyre.com"
     }
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "start": "./bin/server.js",
