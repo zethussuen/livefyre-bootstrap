@@ -114,3 +114,29 @@
         z-index: 2;
     }
 }
+
+
+//
+//     <div class="lf-search-form">
+//       <i class="fycon-search"></i>
+//       <input type="text" placeholder="Search" />
+//     </div>
+//
+.lf-search-form {
+  display: inline-block;
+
+  .fycon-search {
+    position: relative;
+    left: 2em;
+  }
+
+  input {
+    padding-left: 2em;
+    border-radius: 10px;
+    border: thin solid black;
+
+    &:hover {
+      border: thin solid @lf-blue;
+    }
+  }
+}
