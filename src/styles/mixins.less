@@ -2,7 +2,7 @@
 
 // Button variants
 // -------------------------
-// 
+//
 
 .lf-button-variant(@color; @background; @border; @shadow-percent) {
   color: @color;
@@ -195,4 +195,23 @@
       -ms-transform-origin: @origin;
        -o-transform-origin: @origin;
           transform-origin: @origin;
+}
+
+/* GRADIENTS */
+.linear-gradient(@direction, @start, @end) {
+    background-image: -moz-linear-gradient(@direction, @start, @end);
+    background-image: -ms-linear-gradient(@direction, @start, @end);
+    background-image: -o-linear-gradient(@direction, @start, @end);
+    background-image: -webkit-linear-gradient(@direction, @start, @end);
+    background-image: linear-gradient(@direction, @start, @end);
+}
+
+/**
+ * A direction value of 1 specifies a horizontal gradient, 0 specifies vertical.
+ * http://msdn.microsoft.com/en-us/library/ms532887(v=vs.85).aspx
+ * start and end values should be hexes
+ */
+.ie-backcompat-linear-gradient(@direction, @start, @end) {
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType='%d')",@start,@end,@direction));
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType='%d')",@start,@end,@direction);
 }
