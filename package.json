@@ -10,9 +10,13 @@
     {
       "name": "Chris Richards",
       "email": "crichards@livefyre.com"
+    },
+    {
+      "name": "Zethus Suen",
+      "email": "zsuen@livefyre.com"
     }
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "start": "./bin/server.js",
