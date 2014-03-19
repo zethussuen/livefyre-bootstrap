@@ -92,6 +92,20 @@
           transition: @transition;
 }
 
+
+.backface-visibility(@value) {
+  -webkit-backface-visibility: @value;
+     -moz-backface-visibility: @value;
+       -o-backface-visibility: @value;
+          backface-visibility: @value;
+}
+.perspective(@perspective) {
+  -webkit-perspective: @perspective;
+     -moz-perspective: @perspective;
+       -o-perspective: @perspective;
+          perspective: @perspective;
+}
+
 // Transformations
 .rotate(@degrees) {
   -webkit-transform: rotate(@degrees);
@@ -99,6 +113,13 @@
       -ms-transform: rotate(@degrees);
        -o-transform: rotate(@degrees);
           transform: rotate(@degrees);
+}
+.rotateY(@degrees) {
+  -webkit-transform: rotateY(@degrees);
+     -moz-transform: rotateY(@degrees);
+      -ms-transform: rotateY(@degrees);
+       -o-transform: rotateY(@degrees);
+          transform: rotateY(@degrees);
 }
 .scale(@ratio) {
   -webkit-transform: scale(@ratio);
@@ -201,6 +222,12 @@
       -ms-transform-origin: @origin;
        -o-transform-origin: @origin;
           transform-origin: @origin;
+}
+.transform-style(@style) {
+  -webkit-transform-style: @style;
+     -moz-transform-style: @style;
+       -o-transform-style: @style;
+          transform-style: @style;
 }
 
 /* GRADIENTS */
