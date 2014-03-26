@@ -3387,7 +3387,7 @@ button.lf .close {
   bottom: 0;
   left: 0;
   z-index: 1030;
-  background-color: #000000;
+  background-color: rgba(47, 52, 64, 0.7);
 }
 .lf .modal-backdrop.fade {
   opacity: 0;
@@ -6710,7 +6710,7 @@ textarea.lf .lf-input-lg {
   bottom: 0;
   left: 0;
   z-index: 1030;
-  background-color: #000000;
+  background-color: rgba(47, 52, 64, 0.7);
 }
 .lf .lf-modal-backdrop.fade {
   opacity: 0;
