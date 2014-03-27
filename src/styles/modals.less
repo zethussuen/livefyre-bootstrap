@@ -8,12 +8,12 @@
 // .modal-content   - actual modal w/ bg and corners and shit
 
 // Kill the scroll on the body
-.modal-open {
+.lf-modal-open {
   overflow: hidden;
 }
 
 // Container that the modal scrolls within
-.modal {
+.lf-modal {
   display: none;
   overflow: auto;
   overflow-y: scroll;
@@ -30,15 +30,15 @@
   outline: 0;
 
   // When fading in the modal, animate it to slide down
-  &.fade .modal-dialog {
+  &.fade .lf-modal-dialog {
     .translate(0, -25%);
     .transition-transform(~"0.3s ease-out");
   }
-  &.in .modal-dialog { .translate(0, 0)}
+  &.in .lf-modal-dialog { .translate(0, 0)}
 }
 
 // Shell div to position the modal with bottom padding
-.modal-dialog {
+.lf-modal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
@@ -46,7 +46,7 @@
 }
 
 // Actual modal
-.modal-content {
+.lf-modal-content {
   position: relative;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
@@ -59,7 +59,7 @@
 }
 
 // Modal background
-.modal-backdrop {
+.lf-modal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -74,31 +74,31 @@
 
 // Modal header
 // Top section of the modal w/ title and dismiss
-.modal-header {
+.lf-modal-header {
   padding: @modal-title-padding;
   border-bottom: 1px solid @modal-header-border-color;
   min-height: (@modal-title-padding + @modal-title-line-height);
 }
 // Close icon
-.modal-header .close {
+.lf-modal-header .lf-close {
   margin-top: -2px;
 }
 
 // Title text within header
-.modal-title {
+.lf-modal-title {
   margin: 0;
   line-height: @modal-title-line-height;
 }
 
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
-.modal-body {
+.lf-modal-body {
   position: relative;
   padding: @modal-inner-padding;
 }
 
 // Footer (for actions)
-.modal-footer {
+.lf-modal-footer {
   padding: @modal-inner-padding;
   text-align: right; // right align buttons
   border-top: 1px solid @modal-footer-border-color;
@@ -120,7 +120,7 @@
 }
 
 // Measure scrollbar width for padding body during modal show/hide
-.modal-scrollbar-measure {
+.lf-modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -131,18 +131,18 @@
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports
-  .modal-dialog {
+  .lf-modal-dialog {
     width: @modal-md;
     margin: 30px auto;
   }
-  .modal-content {
+  .lf-modal-content {
     .box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
 
   // Modal sizes
-  .modal-sm { width: @modal-sm; }
+  .lf-modal-sm { width: @modal-sm; }
 }
 
 @media (min-width: @screen-md-min) {
-  .modal-lg { width: @modal-lg; }
+  .lf-modal-lg { width: @modal-lg; }
 }
