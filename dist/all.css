@@ -3387,7 +3387,7 @@ button.lf .close {
   bottom: 0;
   left: 0;
   z-index: 1030;
-  background-color: rgba(47, 52, 64, 0.7);
+  background-color: #000000;
 }
 .lf .modal-backdrop.fade {
   opacity: 0;
@@ -3407,7 +3407,7 @@ button.lf .close {
 }
 .lf .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #ececea;
+  border-bottom: 1px solid #e5e5e5;
   min-height: 16.428571429px;
 }
 .lf .modal-header .close {
@@ -3425,7 +3425,7 @@ button.lf .close {
   margin-top: 15px;
   padding: 14px 15px 15px;
   text-align: right;
-  border-top: 1px solid #ececea;
+  border-top: 1px solid #e5e5e5;
 }
 .lf .modal-footer:before,
 .lf .modal-footer:after {
@@ -3445,7 +3445,7 @@ button.lf .close {
 .lf .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .lf .modal-dialog {
     width: 600px;
     margin: 30px auto;
@@ -3456,6 +3456,14 @@ button.lf .close {
     -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .lf .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .lf .modal-lg {
+    width: 900px;
   }
 }
 .lf .tooltip {
@@ -6660,18 +6668,20 @@ textarea.lf .lf-input-lg {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
 }
-.lf .lf-modal.bounce .lf-modal-dialog {
-  -webkit-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27);
-  -moz-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27);
-  -o-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27);
-  animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27);
-  -webkit-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27) ease 0 0 1 normal;
-  -moz-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27) ease 0 0 1 normal;
-  -o-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27) ease 0 0 1 normal;
-  -ms-animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27) ease 0 0 1 normal;
-  animation: modalSpringIn 0.2s cubic-bezier(0.48, 1.66, 0.75, 1.27) ease 0 0 1 normal;
+.lf .lf-modal.fade .lf-modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 .lf .lf-modal.in .lf-modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -6682,26 +6692,23 @@ textarea.lf .lf-input-lg {
 }
 .lf .lf-modal-dialog {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   width: auto;
-  padding: 10px;
+  margin: 10px;
   z-index: 1050;
 }
 .lf .lf-modal-content {
   position: relative;
-  color: #2f3440;
   background-color: #ffffff;
-  border: 0;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
-  outline: none;
-  text-align: center;
+  outline: 0;
 }
 .lf .lf-modal-backdrop {
   position: fixed;
@@ -6709,8 +6716,8 @@ textarea.lf .lf-input-lg {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1030;
-  background-color: rgba(47, 52, 64, 0.7);
+  z-index: 1040;
+  background-color: #000000;
 }
 .lf .lf-modal-backdrop.fade {
   opacity: 0;
@@ -6721,55 +6728,55 @@ textarea.lf .lf-input-lg {
   -webkit-opacity: 0;
 }
 .lf .lf-modal-backdrop.in {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  -moz-opacity: 0.9;
-  -khtml-opacity: 0.9;
-  -webkit-opacity: 0.9;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 .lf .lf-modal-header {
   padding: 15px;
-  background-color: #f7f7f5;
-  border-bottom: 1px solid #ececea;
+  border-bottom: 1px solid #e5e5e5;
   min-height: 16.428571429px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
 }
 .lf .lf-modal-header .lf-close {
-  margin-top: -3px;
+  margin-top: -2px;
 }
 .lf .lf-modal-title {
-  color: #acaeb3;
-  font-weight: 400;
   margin: 0;
   line-height: 1.428571429;
-  text-align: center;
 }
 .lf .lf-modal-body {
   position: relative;
-  text-align: center;
-  padding: 30px 15px 15px;
+  padding: 15px;
 }
 .lf .lf-modal-footer {
-  margin-top: 0;
-  padding: 5px 15px 30px;
-  text-align: center;
-  border-top: 0;
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
 }
-.lf .lf-modal-footer:before,
-.lf .lf-modal-footer:after {
-  content: " ";
-  display: table;
+.lf .lf-modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
 }
-.lf .lf-modal-footer:after {
-  clear: both;
+.lf .lf-modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
 }
-@media screen and (min-width: 768px) {
+.lf .lf-modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.lf .lf-modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
   .lf .lf-modal-dialog {
     width: 600px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 30px auto;
   }
   .lf .lf-modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -6778,69 +6785,13 @@ textarea.lf .lf-input-lg {
     -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-}
-@keyframes modalSpringIn {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+  .lf .lf-modal-sm {
+    width: 300px;
   }
 }
-@-webkit-keyframes modalSpringIn {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@-o-keyframes modalSpringIn {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@-moz-keyframes modalSpringIn {
-  from {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+@media (min-width: 992px) {
+  .lf .lf-modal-lg {
+    width: 900px;
   }
 }
 .lf fieldset {
