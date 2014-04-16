@@ -4941,7 +4941,7 @@ button.lf .close {
 .lf .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .lf .modal-dialog {
     width: 600px;
     margin: 30px auto;
@@ -4952,14 +4952,6 @@ button.lf .close {
     -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  .lf .modal-sm {
-    width: 300px;
-  }
-}
-@media (min-width: 992px) {
-  .lf .modal-lg {
-    width: 900px;
   }
 }
 .lf .tooltip {
@@ -7339,6 +7331,72 @@ button.lf .lf-close {
 .lf .fycon-logo-snap:before {
   content: "\e0aa";
 }
+.lf .colored.fycon-source-drupal:before {
+  color: #0077c0;
+}
+.lf .colored.fycon-source-facebook:before {
+  color: #3b5998;
+}
+.lf .colored.fycon-source-flickr:before {
+  color: #ff0084;
+}
+.lf .colored.fycon-source-foursquare:before {
+  color: #0cbadf;
+}
+.lf .colored.fycon-source-google:before {
+  color: #4285f4;
+}
+.lf .colored.fycon-source-googleplus:before {
+  color: #dd4b39;
+}
+.lf .colored.fycon-source-instagram:before {
+  color: #3f729b;
+}
+.lf .colored.fycon-source-linkedin:before {
+  color: #0e76a8;
+}
+.lf .colored.fycon-source-livefyre:before {
+  color: #e65b3f;
+}
+.lf .colored.fycon-source-pinterest:before {
+  color: #c8232c;
+}
+.lf .colored.fycon-source-reddit:before {
+  color: #ff4500;
+}
+.lf .colored.fycon-source-rss:before {
+  color: #e65b3f;
+}
+.lf .colored.fycon-source-soundcloud:before {
+  color: #ff7700;
+}
+.lf .colored.fycon-source-storify:before {
+  color: #3a98d9;
+}
+.lf .colored.fycon-source-tumblr:before {
+  color: #34526f;
+}
+.lf .colored.fycon-source-twitter:before {
+  color: #55acee;
+}
+.lf .colored.fycon-source-twitter2:before {
+  color: #55acee;
+}
+.lf .colored.fycon-source-vimeo:before {
+  color: #44bbff;
+}
+.lf .colored.fycon-source-vine:before {
+  color: #00a478;
+}
+.lf .colored.fycon-source-wordpress:before {
+  color: #21759b;
+}
+.lf .colored.fycon-source-youtube1:before {
+  color: #c4302b;
+}
+.lf .colored.fycon-source-youtube2:before {
+  color: #c4302b;
+}
 .lf .lf-input-group {
   position: relative;
   display: table;
@@ -7932,7 +7990,7 @@ textarea.lf .lf-input-lg {
   background-clip: padding-box;
   outline: 0;
 }
-.lf .lf-modal-backdrop {
+.lf .modal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -7941,7 +7999,7 @@ textarea.lf .lf-input-lg {
   z-index: 1040;
   background-color: #000000;
 }
-.lf .lf-modal-backdrop.fade {
+.lf .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -7949,13 +8007,13 @@ textarea.lf .lf-input-lg {
   -khtml-opacity: 0;
   -webkit-opacity: 0;
 }
-.lf .lf-modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
+.lf .modal-backdrop.in {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
 }
 .lf .lf-modal-header {
   padding: 15px;
