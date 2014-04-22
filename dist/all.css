@@ -6786,7 +6786,6 @@ button.lf .lf-close {
   font-weight: normal;
   font-style: normal;
 }
-.lf [data-icon]:before,
 .lf [class^="fycon-"]:before,
 .lf [class*=" fycon-"]:before {
   font-family: "fycons" !important;
