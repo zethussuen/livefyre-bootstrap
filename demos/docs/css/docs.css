@@ -22,6 +22,11 @@ body {
   padding: 0;
   position: relative;
 }
+.container.slim {
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+}
 .container.padded {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -106,7 +111,7 @@ section p {
 }
 p.descrip {
   font-size: 1.1rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 14px;
 }
 .bs-example {
