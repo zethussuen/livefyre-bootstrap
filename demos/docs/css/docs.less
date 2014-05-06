@@ -1,0 +1,121 @@
+@lf-red: #E85B3F;
+@lf-blue: #0F98EC;
+@lf-gray: #2F3440;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222222;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto; padding: 0;
+  position: relative;
+
+  &.padded {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.menu {
+  width: 100%;
+  background: @lf-gray;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  color: #fff;
+  padding: 10px;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  .brand, .brand:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
+  .docs-nav {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0; padding: 0;
+    margin-left: 18px;
+
+    li {
+      display: inline-block;
+      margin-right: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+    
+    &.right {
+      float: right;
+      margin-top: 7px;
+    }
+  }
+}
+
+.hero {
+  background: @lf-gray;
+  margin-top: 45px;
+  padding: 30px 10px 50px;
+  color: #fff;
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+  }
+
+  cite.version {
+    font-size: 0.4em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  p {
+    font-size: 1.25em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+h1.section-header {
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: @lf-gray;
+  font-size: 2.5em;
+}
+
+section p {
+  font-size: 1.333em;
+  line-height: 1.75;
+  color: lighten(@lf-gray, 20%);
+}

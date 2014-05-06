@@ -24,8 +24,7 @@
     "hint": "./node_modules/jshint/bin/jshint src; echo",
     "lessc": "./node_modules/less/bin/lessc --include-path=lib/ src/styles/all.less dist/all.css",
     "jsdoc": "rm -rf docs/api && ./node_modules/jsdoc/jsdoc -c tools/jsdoc.conf.json",
-    "build": "bin/build",
-    "build-docs": "cd ./demos/docs/ && jekyll build"
+    "build": "bin/build"
   },
   "devDependencies": {
     "bower": "1.0.0",
