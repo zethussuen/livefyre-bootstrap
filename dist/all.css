@@ -7698,237 +7698,6 @@ button.lf .lf-close {
 .lf .colored.fycon-source-youtube2:before {
   color: #c4302b;
 }
-.lf fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.lf legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: inherit;
-  color: #333333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-.lf label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-.lf input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.lf input[type="radio"],
-.lf input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
-}
-.lf input[type="file"] {
-  display: block;
-}
-.lf select[multiple],
-.lf select[size] {
-  height: auto;
-}
-.lf select optgroup {
-  font-size: inherit;
-  font-style: inherit;
-  font-family: inherit;
-}
-.lf input[type="file"]:focus,
-.lf input[type="radio"]:focus,
-.lf input[type="checkbox"]:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.lf output {
-  display: block;
-  padding-top: 8px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #2f3440;
-  vertical-align: middle;
-}
-.lf .lf-form-control {
-  display: block;
-  width: 100%;
-  height: 36px;
-  padding: 7px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #2f3440;
-  vertical-align: middle;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #d5d6d9;
-  border-radius: 3px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.lf .lf-form-group {
-  margin-bottom: 15px;
-}
-.lf .lf-radio,
-.lf .lf-checkbox {
-  display: block;
-  min-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  vertical-align: middle;
-}
-.lf .lf-radio label,
-.lf .lf-checkbox label {
-  display: inline;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-}
-.lf .lf-radio input[type="radio"],
-.lf .lf-radio-inline input[type="radio"],
-.lf .lf-checkbox input[type="checkbox"],
-.lf .lf-checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-.lf .lf-radio + .lf-radio,
-.lf .lf-checkbox + .lf-checkbox {
-  margin-top: -5px;
-}
-.lf .lf-radio-inline,
-.lf .lf-checkbox-inline {
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
-}
-.lf .lf-radio-inline + .lf-radio-inline,
-.lf .lf-checkbox-inline + .lf-checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-.lf .lf-input-sm {
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-.lf .lf-input-lg {
-  height: 46px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-.lf .lf-has-warning .help-block,
-.lf .lf-has-warning .control-label,
-.lf .lf-has-warning .radio,
-.lf .lf-has-warning .checkbox,
-.lf .lf-has-warning .radio-inline,
-.lf .lf-has-warning .checkbox-inline {
-  color: #ffffff;
-}
-.lf .lf-has-warning .form-control {
-  border-color: #ffffff;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-.lf .lf-has-warning .input-group-addon {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: #feb33b;
-}
-.lf .lf-has-error .help-block,
-.lf .lf-has-error .control-label,
-.lf .lf-has-error .radio,
-.lf .lf-has-error .checkbox,
-.lf .lf-has-error .radio-inline,
-.lf .lf-has-error .checkbox-inline {
-  color: #ffffff;
-}
-.lf .lf-has-error .form-control {
-  border-color: #ffffff;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-.lf .lf-has-error .input-group-addon {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: #f53e52;
-}
-.lf .lf-has-success .help-block,
-.lf .lf-has-success .control-label,
-.lf .lf-has-success .radio,
-.lf .lf-has-success .checkbox,
-.lf .lf-has-success .radio-inline,
-.lf .lf-has-success .checkbox-inline {
-  color: #ffffff;
-}
-.lf .lf-has-success .form-control {
-  border-color: #ffffff;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-.lf .lf-has-success .input-group-addon {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: #63c685;
-}
-.lf .lf-form-control-static {
-  margin-bottom: 0;
-}
-.lf .lf-help-block {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: #737373;
-}
-.lf .lf-form-horizontal .lf-control-label,
-.lf .lf-form-horizontal .lf-radio,
-.lf .lf-form-horizontal .lf-checkbox,
-.lf .lf-form-horizontal .lf-radio-inline,
-.lf .lf-form-horizontal .lf-checkbox-inline {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 8px;
-}
-.lf .lf-form-horizontal .lf-form-group {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.lf .lf-form-horizontal .lf-form-control-static {
-  padding-top: 8px;
-}
 .lf .lf-input-group {
   position: relative;
   display: table;
@@ -8080,6 +7849,366 @@ textarea.lf .lf-input-group-sm > .lf-input-group-btn > .lf-btn {
 }
 .lf .lf-search-form input:hover {
   border: thin solid #0f98ec;
+}
+.lf fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.lf legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.lf label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.lf input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.lf input[type="radio"],
+.lf input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+.lf input[type="file"] {
+  display: block;
+}
+.lf select[multiple],
+.lf select[size] {
+  height: auto;
+}
+.lf select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+.lf input[type="file"]:focus,
+.lf input[type="radio"]:focus,
+.lf input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.lf input[type="number"]::-webkit-outer-spin-button,
+.lf input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+.lf output {
+  display: block;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #2f3440;
+  vertical-align: middle;
+}
+.lf .lf-form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 7px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #2f3440;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #d5d6d9;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.lf .lf-form-control:focus {
+  border-color: #0f98ec;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(15, 152, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(15, 152, 236, 0.6);
+  -ms-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(15, 152, 236, 0.6);
+  -o-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(15, 152, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(15, 152, 236, 0.6);
+}
+.lf .lf-form-control:-moz-placeholder {
+  color: #999999;
+}
+.lf .lf-form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.lf .lf-form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.lf .lf-form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.lf .lf-form-control:focus {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.lf .lf-form-control[disabled],
+.lf .lf-form-control[readonly],
+fieldset[disabled] .lf .lf-form-control {
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+}
+textarea.lf .lf-form-control {
+  height: auto;
+}
+.lf .lf-form-group {
+  margin-bottom: 15px;
+}
+.lf .lf-radio,
+.lf .lf-checkbox {
+  display: block;
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.lf .lf-radio label,
+.lf .lf-checkbox label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.lf .lf-radio input[type="radio"],
+.lf .lf-radio-inline input[type="radio"],
+.lf .lf-checkbox input[type="checkbox"],
+.lf .lf-checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.lf .lf-radio + .lf-radio,
+.lf .lf-checkbox + .lf-checkbox {
+  margin-top: -5px;
+}
+.lf .lf-radio-inline,
+.lf .lf-checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.lf .lf-radio-inline + .lf-radio-inline,
+.lf .lf-checkbox-inline + .lf-checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.lf input[type="radio"][disabled],
+.lf input[type="checkbox"][disabled],
+.lf .lf-radio[disabled],
+.lf .lf-radio-inline[disabled],
+.lf .lf-checkbox[disabled],
+.lf .lf-checkbox-inline[disabled],
+fieldset[disabled] .lf input[type="radio"],
+fieldset[disabled] .lf input[type="checkbox"],
+fieldset[disabled] .lf .lf-radio,
+fieldset[disabled] .lf .lf-radio-inline,
+fieldset[disabled] .lf .lf-checkbox,
+fieldset[disabled] .lf .lf-checkbox-inline {
+  cursor: not-allowed;
+}
+.lf .lf-input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.lf .lf-input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.lf .lf-input-sm {
+  height: auto;
+}
+.lf .lf-input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+select.lf .lf-input-lg {
+  height: 46px;
+  line-height: 46px;
+}
+textarea.lf .lf-input-lg {
+  height: auto;
+}
+.lf .lf-has-warning .help-block,
+.lf .lf-has-warning .control-label,
+.lf .lf-has-warning .radio,
+.lf .lf-has-warning .checkbox,
+.lf .lf-has-warning .radio-inline,
+.lf .lf-has-warning .checkbox-inline {
+  color: #ffffff;
+}
+.lf .lf-has-warning .form-control {
+  border-color: #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.lf .lf-has-warning .form-control:focus {
+  border-color: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+}
+.lf .lf-has-warning .input-group-addon {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #feb33b;
+}
+.lf .lf-has-error .help-block,
+.lf .lf-has-error .control-label,
+.lf .lf-has-error .radio,
+.lf .lf-has-error .checkbox,
+.lf .lf-has-error .radio-inline,
+.lf .lf-has-error .checkbox-inline {
+  color: #ffffff;
+}
+.lf .lf-has-error .form-control {
+  border-color: #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.lf .lf-has-error .form-control:focus {
+  border-color: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+}
+.lf .lf-has-error .input-group-addon {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #f53e52;
+}
+.lf .lf-has-success .help-block,
+.lf .lf-has-success .control-label,
+.lf .lf-has-success .radio,
+.lf .lf-has-success .checkbox,
+.lf .lf-has-success .radio-inline,
+.lf .lf-has-success .checkbox-inline {
+  color: #ffffff;
+}
+.lf .lf-has-success .form-control {
+  border-color: #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.lf .lf-has-success .form-control:focus {
+  border-color: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffffff;
+}
+.lf .lf-has-success .input-group-addon {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #63c685;
+}
+.lf .lf-form-control-static {
+  margin-bottom: 0;
+}
+.lf .lf-help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+@media (min-width: 768px) {
+  .lf .lf-form-inline .lf-form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .lf .lf-form-inline .lf-form-control {
+    display: inline-block;
+  }
+  .lf .lf-form-inline .lf-radio,
+  .lf .lf-form-inline .lf-checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .lf .lf-form-inline .lf-radio input[type="radio"],
+  .lf .lf-form-inline .lf-checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+}
+.lf .lf-form-horizontal .lf-control-label,
+.lf .lf-form-horizontal .lf-radio,
+.lf .lf-form-horizontal .lf-checkbox,
+.lf .lf-form-horizontal .lf-radio-inline,
+.lf .lf-form-horizontal .lf-checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+.lf .lf-form-horizontal .lf-form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.lf .lf-form-horizontal .lf-form-group:before,
+.lf .lf-form-horizontal .lf-form-group:after {
+  content: " ";
+  display: table;
+}
+.lf .lf-form-horizontal .lf-form-group:after {
+  clear: both;
+}
+.lf .lf-form-horizontal .lf-form-control-static {
+  padding-top: 8px;
+}
+@media (min-width: 768px) {
+  .lf .lf-form-horizontal .lf-control-label {
+    text-align: right;
+  }
 }
 .lf .lf-label {
   display: inline;
