@@ -6188,9 +6188,19 @@ td.lf .visible-print {
 .lf .lf-badge:empty {
   display: none;
 }
+.lf .lf-badge.lf-badge-mute {
+  color: #6d7179;
+  background-color: #f5f5f5;
+}
 .lf a.lf-badge:hover,
 .lf a.lf-badge:focus {
   color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lf a.lf-badge.lf-badge-mute:hover,
+.lf a.lf-badge.lf-badge-mute:focus {
+  color: #6d7179;
   text-decoration: none;
   cursor: pointer;
 }
@@ -6953,8 +6963,9 @@ fieldset[disabled] .lf .lf-btn-link.active {
   float: right;
   font-size: 14px;
   font-weight: bold;
-  line-height: 34px;
+  line-height: 28px;
   color: #acaeb3;
+  text-align: center;
   text-shadow: none;
   -webkit-appearance: none;
   -moz-apperance: none;

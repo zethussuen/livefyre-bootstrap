@@ -17,12 +17,26 @@
   &:empty {
     display: none;
   }
+
+  &.lf-badge-mute {
+    color: @lf-gray-dark;
+    background-color: @lf-gray-lighter;
+  }
 }
 
 a.lf-badge {
   &:hover,
   &:focus {
     color: @badge-link-hover-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+a.lf-badge.lf-badge-mute {
+  &:hover,
+  &:focus {
+    color: @lf-gray-dark;
     text-decoration: none;
     cursor: pointer;
   }
