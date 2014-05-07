@@ -5,7 +5,8 @@
     <link href="../../dist/all.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="http://livefyre-cdn.s3.amazonaws.com/libs/livefyre-bootstrap/master/livefyre-bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/docs.css">
-    <script src="http://livefyre-cdn.s3.amazonaws.com/libs/livefyre-bootstrap/master/livefyre-bootstrap.min.js"></script>
+    <script src="../../dist/livefyre-bootstrap.min.js"></script>
+    <!-- <script src="http://livefyre-cdn.s3.amazonaws.com/libs/livefyre-bootstrap/master/livefyre-bootstrap.min.js"></script> -->
   </head>
   <body>
     <header class="menu sticky">
@@ -463,7 +464,30 @@
       <section>
         <div class="container padded slim">
           <h1 class="section-header">Loader</h1>
-          <p class="descrip">TODO</p>
+          <h3>Usage</h3>
+          <p class="descrip">
+            Livefyre's loader depends on <code>loader.js</code> as a dependency (included in the minified js).
+          </p>
+          <h3>Options</h3>
+          <p class="descrip"></p>
+          <div class="bs-example">
+            <div id="lfLoader" style="display: inline-block;"></div>
+            <div id="lfLoader-large" style="display: inline-block;"></div>
+            <div id="lfLoader-small" style="display: inline-block;"></div>
+            <div id="lfLoader-mini" style="display: inline-block;"></div>
+          </div>
+          <div class="highlight">
+<pre><code><-- HTML -->
+&lt;div id="lfLoader"&gt;&lt;/div&gt;
+
+<-- JS -->
+require(['loader'],
+  function(loader) {
+    loader.decorate($('#lfLoader'), 'large')
+  }
+);
+</code></pre>
+          </div>
         </div>
       </section>
       <!-- End of Container -->
@@ -488,15 +512,21 @@
         </div>
       </div>
     </div>
+
     <!-- Scripts -->
     <script src="js/cajon.js"></script>
     <script src="js/requirejs.conf.js"></script>
     <script type="text/javascript">
-      requirejs(['jquery', 'livefyre-bootstrap'],
-        function(jquery, loader){
+      require(['jquery', 'livefyre-bootstrap'],
+        function(jquery, livefyre_bootstrap){
           $('[data-toggle="tooltip"]').tooltip();
           $('[data-toggle="popover"]').popover();
-        })
+          console.log(livefyre_bootstrap)
+          // loader.decorate($('#lfLoader'), 120);
+          // loader.decorate($('#lfLoader-large'), 'large');
+          // loader.decorate($('#lfLoader-small'), 'small');
+          // loader.decorate($('#lfLoader-mini'), 'mini');
+        });
     </script>
   </body>
 </html>
