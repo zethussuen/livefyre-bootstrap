@@ -7176,7 +7176,7 @@ button.lf .lf-close {
   content: "\e00e";
 }
 .lf .fycon-admin-delete:before {
-  content: "\e00f";
+  sucontent: "\e00f";
 }
 .lf .fycon-admin-flag:before {
   content: "\e010";
@@ -7677,7 +7677,7 @@ button.lf .lf-close {
   color: #ff4500;
 }
 .lf .colored.fycon-source-rss:before {
-  color: #e65b3f;
+  color: #ee802f;
 }
 .lf .colored.fycon-source-soundcloud:before {
   color: #ff7700;
