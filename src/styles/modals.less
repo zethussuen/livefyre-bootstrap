@@ -78,6 +78,7 @@
   padding: @modal-title-padding;
   border-bottom: 1px solid @modal-header-border-color;
   min-height: (@modal-title-padding + @modal-title-line-height);
+  text-align: center;
 }
 // Close icon
 .lf-modal-header .lf-close {
@@ -95,12 +96,16 @@
 .lf-modal-body {
   position: relative;
   padding: @modal-inner-padding;
+
+  &.centered {
+    text-align: center;
+  }
 }
 
 // Footer (for actions)
 .lf-modal-footer {
   padding: @modal-inner-padding;
-  text-align: right; // right align buttons
+  text-align: center;
   border-top: 1px solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
 
