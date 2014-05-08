@@ -2,8 +2,8 @@
 <html class="lf">
   <head>
     <title>Livefyre Bootstrap Developer Docs</title>
-    <link href="../../dist/all.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="http://livefyre-cdn.s3.amazonaws.com/libs/livefyre-bootstrap/master/livefyre-bootstrap.min.css"> -->
+    <!-- <link href="../../dist/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://livefyre-cdn.s3.amazonaws.com/libs/livefyre-bootstrap/master/livefyre-bootstrap.min.css">
     <link rel="stylesheet" href="css/docs.css">
   </head>
   <body>
@@ -34,7 +34,23 @@
     </section>
 
     <div class="container">
-      <section>
+      <div class="glossary">
+        <ul class="glossary-list">
+          <a href="#section-buttons" class=""><li class="list-first">Buttons</li></a>
+          <a href="#section-button-groups"><li>Button Groups/Toolbars</li></a>
+          <a href="#section-labels"><li>Labels</li></a>
+          <a href="#section-badges"><li>Badges</li></a>
+          <a href="#section-alerts"><li>Alerts</li></a>
+          <a href="#section-avatars"><li>Avatars</li></a>
+          <a href="#section-toggles"><li>Toggles</li></a>
+          <a href="#section-tooltips"><li>Tooltips</li></a>
+          <a href="#section-popovers"><li>Popovers</li></a>
+          <a href="#section-modals"><li>Modals</li></a>
+          <a href="#section-loader"><li class="list-last">Loader</li></a>
+        </ul>
+      </div>
+
+      <section id="section-buttons">
         <div class="container padded slim">
           <h1 class="section-header">Buttons</h1>
           <h3>Colors</h3>
@@ -88,7 +104,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-button-groups">
         <div class="container padded slim">
           <h1 class="section-header">Button Groups & Button Toolbars</h1>
           <p class="descrip">There are a number of configurable button groups and toolbars that flow both horizontally and vertically as well as sizing options.</p>
@@ -186,7 +202,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-labels">
         <div class="container padded slim">
           <h1 class="section-header">Labels</h1>
           <p class="descrip">Labels are commonly used as tags in our UI.</p>
@@ -222,7 +238,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-badges">
         <div class="container padded slim">
           <h1 class="section-header">Badges</h1>
           <p class="descrip">Badges are used to denote counts of items. They can also be used as links. To de-emphasize a badge, append the modifier class, <code>.lf-badge-mute</code>.</p>
@@ -240,7 +256,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-alerts">
         <div class="container padded slim">
           <h1 class="section-header">Alerts</h1>
           <h3>Colors</h3>
@@ -273,7 +289,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-avatars">
         <div class="container padded slim">
           <h1 class="section-header">Avatars</h1>
           <p class="descrip">Common Livefyre and other social media avatars come in sizes in multiples of 12. Livefyre-bootstrap ships with 24x24, 36x36, 48x48, and 96x96.</p>
@@ -308,7 +324,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-toggles">
         <div class="container padded slim">
           <h1 class="section-header">Toggles</h1>
           <p class="descrip">This UI component requires livefyre-bootstrap's js to be functional. Toggles are touch-ready and are gpu-accelerated on mobile via <code>-webkit-transform: translate3d(0,0,0)</code>.</p>
@@ -332,7 +348,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-tooltips">
         <div class="container padded slim">
           <h1 class="section-header">Tooltips</h1>
           <h3>Usage</h3>
@@ -372,7 +388,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-popovers">
         <div class="container padded slim">
           <h1 class="section-header">Popovers</h1>
           <h3>Usage</h3>
@@ -392,7 +408,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-modals">
         <div class="container padded slim">
           <h1 class="section-header">Modals</h1>
           <h3>Static Example</h3>
@@ -459,7 +475,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="section-loader">
         <div class="container padded slim">
           <h1 class="section-header">Loader</h1>
           <h3>Usage</h3>
@@ -522,6 +538,11 @@ loader.decorate($('#lfLoader-mini'), 'mini')
     <script type="text/javascript">
       require(['jquery', 'livefyre-bootstrap'],
         function(jquery, livefyre_bootstrap){
+          $('.glossary-list').affix({
+            offset: {
+              top: 250
+            }
+          })
           $('[data-toggle="tooltip"]').tooltip();
           $('[data-toggle="popover"]').popover();
           livefyre_bootstrap.loader.decorate($('#lfLoader'), 120);

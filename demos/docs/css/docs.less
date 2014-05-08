@@ -24,7 +24,7 @@ html, body {
   position: relative;
 
   &.slim {
-    max-width: 900px;
+    max-width: 880px;
     margin: 0; padding: 0;
   }
 
@@ -133,6 +133,41 @@ p.descrip {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 14px;
+}
+
+.glossary {
+  width: 200px;
+  float: right;
+}
+
+.glossary-list {
+  width: 200px;
+  list-style-type: none;
+  margin: 0; padding: 0;
+
+  &.affix-top {
+    margin-top: 40px;
+  }
+
+  &.affix {
+    top: 60px;
+  }
+}
+
+.glossary-list li {
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0;
+
+  &.list-first {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &.list-last {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+  }
 }
 
 .bs-example {
