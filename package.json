@@ -16,6 +16,10 @@
       "email": "zsuen@livefyre.com"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Livefyre/livefyre-bootstrap.git"
+  },
   "version": "1.0.0",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
