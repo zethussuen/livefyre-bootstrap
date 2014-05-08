@@ -16,7 +16,7 @@
       "email": "zsuen@livefyre.com"
     }
   ],
-  "version": "0.3.3",
+  "version": "1.0.0",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "start": "./bin/server.js",
@@ -24,8 +24,7 @@
     "hint": "./node_modules/jshint/bin/jshint src; echo",
     "lessc": "./node_modules/less/bin/lessc --include-path=lib/ src/styles/all.less dist/all.css",
     "jsdoc": "rm -rf docs/api && ./node_modules/jsdoc/jsdoc -c tools/jsdoc.conf.json",
-    "build": "bin/build",
-    "build-docs": "cd ./demos/docs/ && jekyll build"
+    "build": "bin/build"
   },
   "devDependencies": {
     "bower": "1.0.0",
@@ -33,7 +32,7 @@
     "jsdoc": "git://github.com/jsdoc3/jsdoc.git",
     "mocha-phantomjs": "3.1.6",
     "phantomjs": "1.9.2-2",
-    "less": "~1.5.0",
+    "less": "~1.7.0",
     "portfinder": "~0.2.1",
     "express": "~3.4.7",
     "less-middleware": "~0.1.14",
