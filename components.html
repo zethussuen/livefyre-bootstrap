@@ -268,7 +268,7 @@
           <p class="descrip">If the alert is dismissable, add class <code>.lf-alert-dismissable</code> and include a <code>&lt;span class="lf-close [light]"/&gt;</code>. Depending on the color of the alert, use the default darker close via <code>fycon-x</code> as seen in the example below.</p>
           <div class="bs-example">
             <div class="lf-alert lf-alert-info"><strong>Info: You might want to check that thing, it could be important.</strong></div>
-            <div class="lf-alert lf-alert-warning"><strong>Warning: I think you might've fucked something up.</strong></div>
+            <div class="lf-alert lf-alert-warning lf-alert-dismissable"><strong>Warning: I think you might've fucked something up.</strong><span class="lf-close light"><i class="fycon-x"></i></span></div>
             <div class="lf-alert lf-alert-success lf-alert-dismissable"><strong>Success: Good job, everything looks good!</strong><span class="lf-close light"><i class="fycon-x"></i></span></div>
           </div>
           <div class="highlight">
@@ -365,7 +365,11 @@
           </p>
           <div class="bs-example">This is a <span data-toggle="tooltip" data-title="Looks like you've found meh" style="border-bottom: 1px dotted #777">tooltip</span>. You can make them appear in a number of <span data-toggle="tooltip" data-title="To the right" data-placement="right" style="border-bottom: 1px dotted #777">ways</span>. Also to the <span data-toggle="tooltip" data-title="Left coast is the best coast" data-placement="left" style="border-bottom: 1px dotted #777">left</span> and down <span data-toggle="tooltip" data-title="Australia" data-placement="bottom" style="border-bottom: 1px dotted #777">below</span>.</div>
           <div class="highlight">
-<pre><code>$('#element').tooltip(
+<pre><code><-- HTML -->
+&lt;span data-toggle="tooltip" data-title="Looks like you've found meh"&gt;tooltip&lt;/span&gt;
+
+<-- JS -->
+$('#element').tooltip(
   {
     animation: true, // boolean
     html: false, // boolean; allows HTML to be inserted into the tooltip
