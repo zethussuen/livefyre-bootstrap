@@ -196,26 +196,6 @@
     -webkit-opacity: @opacity;
 }
 
-/* ANIMATIONS */
-.animation(@name, @function: ease, @duration: 0, @delay: 0, @iterations: 1, @direction: normal) {
-    -webkit-animation: @name @function @duration @delay @iterations @direction;
-    -moz-animation: @name @function @duration @delay @iterations @direction;
-    -o-animation: @name @function @duration @delay @iterations @direction;
-    -ms-animation: @name @function @duration @delay @iterations @direction;
-    animation: @name @function @duration @delay @iterations @direction;
-}
-.delayed-animation(@name, @function: ease, @duration: 0, @delay: 0, @iterations: 1, @direction: normal) {
-    opacity: 0;
-    opacity: 1\9;
-    *opacity: 1;
-    .animation(@name, @function, @duration, @delay, @iterations, @direction);
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
-    -o-animation-fill-mode:forwards;
-    -ms-animation: forwards;
-    animation-fill-mode:forwards;
-}
-
 .transform-origin(@origin) {
   -webkit-transform-origin: @origin;
      -moz-transform-origin: @origin;
