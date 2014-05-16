@@ -77,12 +77,14 @@
 .lf-modal-header {
   padding: @modal-title-padding;
   border-bottom: 1px solid @modal-header-border-color;
+  background-color: @modal-header-bg;
+  border-radius: @border-radius-large @border-radius-large 0 0;
   min-height: (@modal-title-padding + @modal-title-line-height);
   text-align: center;
 }
 // Close icon
 .lf-modal-header .lf-close {
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 // Title text within header
@@ -106,7 +108,6 @@
 .lf-modal-footer {
   padding: @modal-inner-padding;
   text-align: center;
-  border-top: 1px solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
