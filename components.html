@@ -329,11 +329,21 @@
           <h1 class="section-header">Toggles</h1>
           <p class="descrip">This UI component requires livefyre-bootstrap's js to be functional. Toggles are touch-ready and are gpu-accelerated on mobile via <code>-webkit-transform: translate3d(0,0,0)</code>.</p>
           <p class="descrip">Note: requires javascript.</p>
+          <h3>Sizing</h3>
+          <p class="descrip">
+            There is an optional smaller toggle size which can be enabled by adding class <code>.lf-toggle-sm</code>.
+          </p>
           <div class="bs-example">
             <div class="lf-toggle" style="display: inline-block;">
+              <div class="lf-toggle-handle" ></div>
+            </div>
+            <div class="lf-toggle lf-toggle-label" style="display: inline-block;">
               <div class="lf-toggle-handle"></div>
             </div>
-            <div class="lf-toggle lf-toggle-label">
+            <div class="lf-toggle lf-toggle-sm" style="display: inline-block;">
+              <div class="lf-toggle-handle"></div>
+            </div>
+            <div class="lf-toggle lf-toggle-sm lf-toggle-label" style="display: inline-block;">
               <div class="lf-toggle-handle"></div>
             </div>
           </div>
@@ -341,7 +351,16 @@
 <pre><code>&lt;div class="lf-toggle"&gt;
   &lt;div class="lf-toggle-handle"&gt;&lt;/div&gt;
 &lt;/div&gt;
+
 &lt;div class="lf-toggle lf-toggle-label"&gt;
+  &lt;div class="lf-toggle-handle"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="lf-toggle lf-toggle-sm"&gt;
+  &lt;div class="lf-toggle-handle"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="lf-toggle lf-toggle-sm lf-toggle-label"&gt;
   &lt;div class="lf-toggle-handle"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>
