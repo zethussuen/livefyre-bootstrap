@@ -7721,6 +7721,30 @@ button.lf .lf-close {
 .lf .colored.fycon-source-youtube2:before {
   color: #c4302b;
 }
+.lf .colored.fycon-icon-chat:before {
+  color: #63c685;
+}
+.lf .colored.fycon-icon-comments:before {
+  color: #f53e52;
+}
+.lf .colored.fycon-icon-liveblog:before {
+  color: #0f98ec;
+}
+.lf .colored.fycon-icon-map:before {
+  color: #7168a5;
+}
+.lf .colored.fycon-icon-reviews:before {
+  color: #feb33b;
+}
+.lf .colored.fycon-icon-sidenotes:before {
+  color: #2f3440;
+}
+.lf .colored.fycon-icon-storify:before {
+  color: #3a98d9;
+}
+.lf .colored.fycon-icon-wall:before {
+  color: #7168a5;
+}
 .lf .lf-input-group {
   position: relative;
   display: table;
