@@ -1,0 +1,118 @@
+/*******************************
+ * POPOVER KEYFRAMES
+ * Used on Sidenotes, Modal Bounces
+ *******************************/
+
+@bounceInOpacityStart: 0;
+@bounceInOpacityEnd: 1;
+@bounceInOpacityEndIE: 100;
+@bounceInScaleStart: 0.7;
+@bounceInScalePeak: 1.1;
+@bounceInScaleEnd: 1;
+
+@-webkit-keyframes lf-scale-bounce-in {
+  0% {
+    -webkit-opacity: @bounceInOpacityStart;
+    -webkit-transform: scale(@bounceInScaleStart);
+  }
+  62% {
+    -webkit-transform: scale(@bounceInScalePeak);
+  }
+  100% {
+    -webkit-opacity: @bounceInOpacityEnd;
+    -webkit-transform: scale(@bounceInScaleEnd);
+  }
+}
+@-moz-keyframes lf-scale-bounce-in {
+  0% {
+    -moz-opacity: @bounceInOpacityStart;
+    -moz-transform: scale(@bounceInScaleStart);
+  }
+  62% {
+    -moz-transform: scale(@bounceInScalePeak);
+  }
+  100% {
+    -moz-opacity: @bounceInOpacityEnd;
+    -moz-transform: scale(@bounceInScaleEnd);
+  }
+}
+@-o-keyframes lf-scale-bounce-in {
+  0% {
+    opacity: @bounceInOpacityStart;
+    -o-transform: scale(@bounceInScaleStart);
+  }
+  62% {
+    -o-transform: scale(@bounceInScalePeak);
+  }
+  100% {
+    opacity: @bounceInOpacityEnd;
+    -o-transform: scale(@bounceInScaleEnd);
+  }
+}
+@keyframes lf-scale-bounce-in {
+  0% {
+    opacity: @bounceInOpacityStart;
+    filter: ~"alpha(opacity=@{bounceInOpacityStart})";
+    -ms-filter: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)", @bounceInOpacityStart);
+    -ms-transform: scale(@bounceInScaleStart);
+    transform: scale(@bounceInScaleStart);
+  }
+  62% {
+    -ms-transform: scale(@bounceInScalePeak);
+    transform: scale(@bounceInScalePeak);
+  }
+  100% {
+    opacity: @bounceInOpacityEnd;
+    filter: ~"alpha(opacity=@{bounceInOpacityEndIE})";
+    -ms-filter: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)", @bounceInOpacityEndIE);
+    -ms-transform: scale(@bounceInScaleEnd);
+    transform: scale(@bounceInScaleEnd);
+  }
+}
+
+@-webkit-keyframes lf-scale-out {
+  0% {
+    -webkit-opacity: @bounceInOpacityEnd;
+    -webkit-transform: scale(@bounceInScaleEnd);
+  }
+  100% {
+    -webkit-opacity: @bounceInOpacityStart;
+    -webkit-transform: scale(@bounceInScaleStart);
+  }
+}
+@-moz-keyframes lf-scale-out {
+  0% {
+    -moz-opacity: @bounceInOpacityEnd;
+    -moz-transform: scale(@bounceInScaleEnd);
+  }
+  100% {
+    -moz-opacity: @bounceInOpacityStart;
+    -moz-transform: scale(@bounceInScaleStart);
+  }
+}
+@-o-keyframes lf-scale-out {
+  0% {
+    opacity: @bounceInOpacityEnd;
+    -o-transform: scale(@bounceInScaleEnd);
+  }
+  100% {
+    opacity: @bounceInOpacityStart;
+    -o-transform: scale(@bounceInScaleStart);
+  }
+}
+@keyframes lf-scale-out {
+  0% {
+    opacity: @bounceInOpacityEnd;
+    filter: ~"alpha(opacity=@{bounceInOpacityEndIE})";
+    -ms-filter: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)", @bounceInOpacityEndIE);
+    -ms-transform: scale(@bounceInScaleEnd);
+    transform: scale(@bounceInScaleEnd);
+  }
+  100% {
+    opacity: @bounceInOpacityStart;
+    filter: ~"alpha(opacity=@{bounceInOpacityStart})";
+    -ms-filter: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)", @bounceInOpacityStart);
+    -ms-transform: scale(@bounceInScaleStart);
+    transform: scale(@bounceInScaleStart);
+  }
+}
