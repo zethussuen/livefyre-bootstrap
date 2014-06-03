@@ -152,3 +152,9 @@
 @media (min-width: @screen-md-min) {
   .lf-modal-lg { width: @modal-lg; }
 }
+
+.lf-modal.in .lf-modal-dialog.lf-animated {
+  .animation(lf-scale-bounce-in .3s);
+  .backface-visibility(visible);
+  .translate3d(0,0,0);
+}
