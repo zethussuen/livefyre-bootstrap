@@ -246,6 +246,12 @@
 }
 
 /* VERTICAL CENTERING */
+// To avoid half-pixel blurriness, the
+// parent element should have preserve-3d
+// -webkit-transform-style: preserve-3d;
+//    -moz-transform-style: preserve-3d;
+//     -ms-transform-style: preserve-3d;
+//         transform-style: preserve-3d;
 .vertical-center() {
     position: relative;
     top: 50%;
@@ -254,8 +260,4 @@
         -ms-transform: translateY(-50%);
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-        -ms-transform-style: preserve-3d;
-            transform-style: preserve-3d;
 }
