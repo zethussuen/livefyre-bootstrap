@@ -6363,6 +6363,7 @@ td.lf .visible-print {
   0% {
     opacity: 0;
     transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -6407,6 +6408,7 @@ td.lf .visible-print {
   100% {
     opacity: 1;
     transform: translateY(0);
+    -ms-transform: translateY(0);
   }
 }
 .lf .lf-alert {

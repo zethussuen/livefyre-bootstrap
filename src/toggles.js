@@ -10,6 +10,19 @@
   var touchMove = false;
   var distanceX = false;
   var toggle    = false;
+    
+  // IE9,10 don't support the CustomEvent
+  // constructor. mzl.la/TLH4q1 
+  if (!window.CustomEvent) {
+    function CustomEvent ( eventType, params ) {
+      params = params || { bubbles: false, cancelable: false, detail: undefined };
+    var evt = document.createEvent( 'CustomEvent' );       
+    evt.initCustomEvent( eventType, params.bubbles, params.cancelable, params.detail )
+    return evt;
+   };
+
+    CustomEvent.prototype = window.Event.prototype;
+  }
 
   var findToggle = function (target) {
     var i, toggles = document.querySelectorAll('.lf-toggle');
@@ -79,13 +92,14 @@
 
     toggle.classList[slideOn ? 'add' : 'remove']('active');
 
-    e = new CustomEvent('toggle', {
-      detail: { isActive: slideOn },
-      bubbles: true,
-      cancelable: true
+    var evt = document.createEvent("CustomEvent");
+    evt.initCustomEvent('toggle',
+      true,
+      true,
+      { detail: { isActive: slideOn },
     });
 
-    toggle.dispatchEvent(e);
+    toggle.dispatchEvent(evt);
 
     touchMove = false;
     toggle    = false;
@@ -106,13 +120,14 @@
 
     toggle.classList[slideOn ? 'add' : 'remove']('active');
 
-    e = new CustomEvent('toggle', {
-      detail: { isActive: slideOn },
-      bubbles: true,
-      cancelable: true
+    var evt = document.createEvent("CustomEvent");
+    evt.initCustomEvent('toggle',
+      true,
+      true,
+      { detail: { isActive: slideOn },
     });
 
-    toggle.dispatchEvent(e);
+    toggle.dispatchEvent(evt);
 
     touchMove = false;
     toggle    = false;
