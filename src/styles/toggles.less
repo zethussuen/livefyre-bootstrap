@@ -81,6 +81,11 @@
     width: 22px;
     height: 22px;
   }
+
+  &.active .lf-toggle-handle {
+    -webkit-transform: translate3d(14px,0,0);
+          transform: translate3d(14px,0,0);
+  }
 }
 
 .lf-toggle.lf-toggle-sm.lf-toggle-label {
@@ -94,5 +99,10 @@
   &.active:before {
     right: auto;
     left: 13px;
+  }
+
+  &.active .lf-toggle-handle {
+    -webkit-transform: translate3d(42px,0,0);
+          transform: translate3d(42px,0,0);   
   }
 }
