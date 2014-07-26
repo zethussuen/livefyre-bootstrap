@@ -1,7 +1,8 @@
 @import (reference) "./variables";
+@fycon-font-version: "1.3.1";
 
 @font-face {
-  font-family: "fycons";
+  font-family: "fycons-@{fycon-font-version}";
   src:~"url('@{icon-font-path}@{fycon-font-name}.eot')";
   src:~"url('@{icon-font-path}@{fycon-font-name}.eot?#iefix') format('embedded-opentype')",
     ~"url('@{icon-font-path}@{fycon-font-name}.woff') format('woff')",
@@ -13,7 +14,7 @@
 
 [class^="fycon-"]:before,
 [class*=" fycon-"]:before {
-  font-family: "fycons" !important;
+  font-family: "fycons-@{fycon-font-version}" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
