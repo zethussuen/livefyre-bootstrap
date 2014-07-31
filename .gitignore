@@ -3,3 +3,4 @@
 /demos/docs-gh/
 npm-debug.log
 /dist/*.gz
+/lib/
