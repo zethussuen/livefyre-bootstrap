@@ -1,7 +1,7 @@
 @import (reference) "./variables";
 @fycon-font-version: "1.3.1";
 
-@font-face {
+.fycons-font-face(@fycon-font-version: "1.3.1", @icon-font-path: "fonts/", @fycon-font-name: "fycons"){
   font-family: "fycons-@{fycon-font-version}";
   src:~"url('@{icon-font-path}@{fycon-font-name}.eot')";
   src:~"url('@{icon-font-path}@{fycon-font-name}.eot?#iefix') format('embedded-opentype')",
@@ -12,36 +12,38 @@
   font-style: normal;
 }
 
-[class^="fycon-"]:before,
-[class*=" fycon-"]:before {
-  font-family: "fycons-@{fycon-font-version}" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: inherit;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.btn, .btn-lg, .btn-sm {
+.fycons-styles() {
   [class^="fycon-"]:before,
   [class*=" fycon-"]:before {
-    margin-top: -2px;
+    font-family: "fycons-@{fycon-font-version}" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
 
-.fycon-lg {
-  font-size: 2em;
-}
+  .btn, .btn-lg, .btn-sm {
+    [class^="fycon-"]:before,
+    [class*=" fycon-"]:before {
+      margin-top: -2px;
+    }
+  }
 
-.fycon-sm {
-  font-size: 0.5em;
-}
+  .fycon-lg {
+    font-size: 2em;
+  }
 
-.fycon-inherit {
-  font-size: inherit;
+  .fycon-sm {
+    font-size: 0.5em;
+  }
+
+  .fycon-inherit {
+    font-size: inherit;
+  }
 }
