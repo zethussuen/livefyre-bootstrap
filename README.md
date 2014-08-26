@@ -60,3 +60,7 @@ There are mocha tests in /tests/spec.
 Run tests with
 
     npm test
+
+## Todo
+* Does /dist need to be .gitignore'd? Or do people depend on dist/ assets. It hasn't been updated in 2 months.
+* Make use of https://github.com/livefyre/gulp-fycon ?
