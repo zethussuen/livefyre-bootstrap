@@ -36,6 +36,7 @@
     "jsdoc": "git://github.com/jsdoc3/jsdoc.git",
     "mocha-phantomjs": "3.1.6",
     "phantomjs": "1.9.2-2",
+    "lfcdn": "git+ssh://git@github.com:Livefyre/lfcdn",
     "less": "1.7.0",
     "portfinder": "~0.2.1",
     "express": "~3.4.7",
